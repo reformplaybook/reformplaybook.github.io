@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trans People | The Reform Playbook</title>
+<meta name="description" content="How Reform UK talks about trans people and 'gender ideology'. Their words, examined.">
+
+<style>
+:root {
+  --cyan: #00c7d9;
+  --dark: #111111;
+  --white: #ffffff;
+  --offwhite: #f5f5f2;
+  --grey: #666666;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  background: var(--white);
+}
+
+a { color: inherit; }
+
+header {
+  background: var(--white);
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+.brand span { color: var(--cyan); }
+
+.back {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero { background: var(--cyan); }
+
+.hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 28px 95px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(65px, 11vw, 145px);
+  line-height: .82;
+  letter-spacing: -7px;
+  text-transform: uppercase;
+}
+
+.hero-line {
+  margin-top: 55px;
+  max-width: 850px;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.construction {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.construction-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 28px 100px;
+}
+
+.construction .label { color: var(--cyan); }
+
+.construction-line {
+  padding: 18px 0;
+  border-top: 1px solid #444;
+  font-size: clamp(34px, 6vw, 76px);
+  line-height: .98;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.construction-line:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.construction-line span { color: var(--cyan); }
+
+.evidence { background: var(--offwhite); }
+
+.evidence-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.evidence .label { color: #008c99; }
+
+blockquote {
+  margin: 40px 0;
+  padding: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.source {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.source + .source { margin-top: 35px; }
+
+.source strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.source a { font-weight: 800; }
+
+.analysis { background: var(--white); }
+
+.analysis-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.analysis h2 {
+  margin: 0 0 50px;
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: .9;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+.analysis p {
+  font-size: 23px;
+  line-height: 1.45;
+  margin: 0 0 30px;
+}
+
+.analysis strong {
+  background: var(--cyan);
+  padding: 2px 5px;
+}
+
+.reality {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.reality-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.reality .label { color: var(--cyan); }
+
+.reality h2 {
+  margin: 0 0 70px;
+  font-size: clamp(50px, 8vw, 100px);
+  line-height: .88;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+}
+
+.fact {
+  border-top: 1px solid #444;
+  padding: 35px 0 40px;
+}
+
+.fact:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.big-number {
+  color: var(--cyan);
+  font-size: clamp(50px, 8vw, 100px);
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.fact p {
+  max-width: 760px;
+  margin: 15px 0 0;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.reality-copy { margin-top: 80px; }
+
+.reality-copy p {
+  max-width: 820px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-copy .evidence-line {
+  margin-top: 50px;
+  color: var(--cyan);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.reality-sources {
+  margin-top: 80px;
+  padding-top: 25px;
+  border-top: 1px solid #444;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.reality-sources strong {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.reality-sources p { max-width: 850px; }
+
+.reality-sources a { color: var(--cyan); }
+
+.final { background: var(--cyan); }
+
+.final-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.final p {
+  margin: 0;
+  font-size: clamp(42px, 7vw, 88px);
+  line-height: .94;
+  font-weight: 900;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+footer {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 28px;
+}
+
+.footer-title {
+  color: var(--cyan);
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+footer p {
+  margin: 0;
+  max-width: 750px;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .nav { align-items: flex-start; gap: 20px; }
+  h1 { letter-spacing: -4px; }
+  .construction-line { letter-spacing: -2px; }
+
+  .analysis h2,
+  .reality h2,
+  .final p {
+    letter-spacing: -2px;
+  }
+
+  .big-number { letter-spacing: -3px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="/">Reform <span>Playbook</span></a>
+    <a class="back" href="/">← The Playbook</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-inner">
+
+    <div class="label">The target</div>
+
+    <h1>
+      Trans<br>
+      people.
+    </h1>
+
+    <div class="hero-line">
+      Your children are at risk.<br>
+      Women's spaces are threatened.<br>
+      An ideology is to blame.
+    </div>
+
+  </div>
+</section>
+
+<section class="construction">
+  <div class="construction-inner">
+
+    <div class="label">The picture</div>
+
+    <div class="construction-line">
+      Your children need <span>protecting.</span>
+    </div>
+
+    <div class="construction-line">
+      Women need <span>protecting.</span>
+    </div>
+
+    <div class="construction-line">
+      Institutions have embraced <span>“gender ideology”.</span>
+    </div>
+
+    <div class="construction-line">
+      And Reform will <span>protect you.</span>
+    </div>
+
+  </div>
+</section>
+
+<section class="evidence">
+  <div class="evidence-inner">
+
+    <div class="label">Their words</div>
+
+    <blockquote>
+      “The puberty blockers trial is state-sanctioned child abuse.”
+    </blockquote>
+
+    <blockquote>
+      “There are already too many young people who have been poorly advised
+      and suffered irreversible harm due to gender ideology.”
+    </blockquote>
+
+    <blockquote>
+      “Only a Reform UK government will protect our children.”
+    </blockquote>
+
+    <div class="source">
+      <strong>Reform UK / Suella Braverman, 25 June 2026</strong>
+      No child is born in the wrong body
+
+      <br><br>
+
+      <a
+        href="https://reformparty.uk/news/suella-braverman-no-child-is-born-in-the-wrong-body"
+        target="_blank"
+        rel="noopener">
+        Read the original Reform UK statement →
+      </a>
+    </div>
+
+    <blockquote>
+      “The new guidance was supposed to keep women safe.”
+    </blockquote>
+
+    <blockquote>
+      “Do the Lib Dems care more about racking up donations than they do
+      about protecting women?”
+    </blockquote>
+
+    <div class="source">
+      <strong>Reform UK / Suella Braverman, 27 July 2026</strong>
+      Dodgy trans-action: did Lib Dems sell out women's rights for cash?
+
+      <br><br>
+
+      <a
+        href="https://reformparty.uk/index.php/news/dodgy-trans-action-did-lib-dems-sell-out-women-s-rights-for-cash"
+        target="_blank"
+        rel="noopener">
+        Read the original Reform UK statement →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="analysis">
+  <div class="analysis-inner">
+
+    <div class="label">The playbook</div>
+
+    <h2>
+      Make them<br>
+      a threat.
+    </h2>
+
+    <p>
+      The argument begins with something almost impossible to disagree with:
+      <strong>children should be safe.</strong>
+    </p>
+
+    <p>
+      So should women.
+    </p>
+
+    <p>
+      There are legitimate debates about medicine for young people,
+      single-sex services and how sex and gender should be treated in law.
+    </p>
+
+    <p>
+      But watch what happens to those debates.
+    </p>
+
+    <p>
+      A disputed medical treatment becomes
+      <strong>“child abuse”.</strong>
+    </p>
+
+    <p>
+      A disagreement about policy becomes
+      <strong>“gender ideology”.</strong>
+    </p>
+
+    <p>
+      A dispute over access to particular spaces becomes a question of
+      <strong>keeping women safe.</strong>
+    </p>
+
+    <p>
+      And a small minority of the population becomes associated,
+      again and again, with danger to somebody else.
+    </p>
+
+    <p>
+      The political offer then becomes simple:
+      <strong>you need protecting — and Reform will protect you.</strong>
+    </p>
+
+  </div>
+</section>
+
+<section class="reality">
+  <div class="reality-inner">
+
+    <div class="label">The reality</div>
+
+    <h2>
+      Debate the policy.<br>
+      Not the bogeyman.
+    </h2>
+
+    <div class="fact">
+
+      <div class="big-number">≈ 1 in 200</div>
+
+      <p>
+        people aged 16 and over in England and Wales are estimated to have
+        a gender identity different from their sex registered at birth.
+        The ONS cautions that the Census figure is not a precise population
+        estimate, but says around 1 in 200 is broadly consistent with other
+        sources.
+      </p>
+
+    </div>
+
+    <div class="fact">
+
+      <div class="big-number">3,809</div>
+
+      <p>
+        transgender hate crimes were recorded by police in England and Wales
+        in the year ending March 2025, excluding Metropolitan Police data
+        from the headline series.
+      </p>
+
+    </div>
+
+    <div class="fact">
+
+      <div class="big-number">Not routine</div>
+
+      <p>
+        Puberty blockers are not routinely available through the NHS for
+        under-18s with gender incongruence or gender dysphoria. Routine
+        commissioning ended in 2024 after the Cass Review found the
+        evidence base inadequate.
+      </p>
+
+    </div>
+
+    <div class="fact">
+
+      <div class="big-number">A clinical trial</div>
+
+      <p>
+        PATHWAYS is research intended to establish better evidence about
+        puberty suppression. After safety concerns were raised in 2026,
+        the medicines regulator required changes to the protocol and
+        strengthened safeguards before approving it to regulatory standards.
+      </p>
+
+    </div>
+
+    <div class="reality-copy">
+
+      <p>
+        None of this means every policy advocated in the name of trans
+        inclusion is correct.
+      </p>
+
+      <p>
+        The evidence around puberty blockers was weak. The NHS changed its
+        policy. The government restricted prescribing. Regulators scrutinised
+        the proposed clinical trial and required stronger safeguards.
+      </p>
+
+      <p>
+        Those are facts.
+      </p>
+
+      <p>
+        But they do not turn a clinical trial into “state-sanctioned child
+        abuse”. Nor do disagreements about toilets, changing rooms or
+        medical policy establish that trans people collectively present a
+        danger to women or children.
+      </p>
+
+      <p class="evidence-line">
+        You can debate policy without turning people into a threat.
+      </p>
+
+    </div>
+
+    <div class="reality-sources">
+
+      <strong>Sources</strong>
+
+      <p>
+        Office for National Statistics,
+        <a
+          href="https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/genderidentity/articles/census2021genderidentityestimatesforenglandandwalesadditionalguidanceonuncertaintyandappropriateuse/2025-03-26"
+          target="_blank"
+          rel="noopener">
+          Census 2021 gender identity estimates: additional guidance on
+          uncertainty and appropriate use
+        </a>.
+      </p>
+
+      <p>
+        Home Office,
+        <a
+          href="https://www.gov.uk/government/statistics/hate-crime-england-and-wales-year-ending-march-2025/hate-crime-england-and-wales-year-ending-march-2025"
+          target="_blank"
+          rel="noopener">
+          Hate crime, England and Wales, year ending March 2025
+        </a>.
+      </p>
+
+      <p>
+        Department of Health and Social Care,
+        <a
+          href="https://www.gov.uk/government/consultations/proposed-changes-to-the-availability-of-puberty-blockers-for-under-18s/proposed-changes-to-the-availability-of-puberty-blockers"
+          target="_blank"
+          rel="noopener">
+          Proposed changes to the availability of puberty blockers
+        </a>.
+      </p>
+
+      <p>
+        Medicines and Healthcare products Regulatory Agency,
+        <a
+          href="https://www.gov.uk/government/news/update-on-the-pathways-clinical-trial"
+          target="_blank"
+          rel="noopener">
+          Update on the PATHWAYS clinical trial
+        </a>,
+        19 June 2026.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="final">
+  <div class="final-inner">
+
+    <p>
+      Trans people<br>
+      aren't why<br>
+      Britain is broken.
+    </p>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-title">The Reform Playbook</div>
+
+    <p>
+      An independent project examining the political rhetoric of Reform UK.
+      This website is not affiliated with, endorsed by, or associated with
+      Reform UK.
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>
