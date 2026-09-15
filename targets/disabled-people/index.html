@@ -16,7 +16,13 @@
   --grey: #666666;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -25,11 +31,15 @@ body {
   background: var(--white);
 }
 
-a { color: inherit; }
+a {
+  color: inherit;
+}
+
 
 /* HEADER */
 
 header {
+  background: var(--white);
   border-bottom: 1px solid #ddd;
 }
 
@@ -50,7 +60,9 @@ header {
   text-decoration: none;
 }
 
-.brand span { color: var(--cyan); }
+.brand span {
+  color: var(--cyan);
+}
 
 .back {
   font-size: 13px;
@@ -58,6 +70,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 
 /* HERO */
 
@@ -96,7 +109,8 @@ h1 {
   letter-spacing: -2px;
 }
 
-/* CONSTRUCTION */
+
+/* THE PICTURE */
 
 .construction {
   background: var(--dark);
@@ -130,7 +144,8 @@ h1 {
   color: var(--cyan);
 }
 
-/* SOURCE */
+
+/* THEIR WORDS */
 
 .evidence {
   background: var(--offwhite);
@@ -172,7 +187,8 @@ blockquote {
   font-weight: 800;
 }
 
-/* ANALYSIS */
+
+/* THE PLAYBOOK */
 
 .analysis {
   background: var(--white);
@@ -203,6 +219,99 @@ blockquote {
   padding: 2px 5px;
 }
 
+
+/* THE REALITY */
+
+.reality {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.reality-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.reality .label {
+  color: var(--cyan);
+}
+
+.reality h2 {
+  margin: 0 0 70px;
+  font-size: clamp(50px, 8vw, 100px);
+  line-height: .88;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+}
+
+.fact {
+  border-top: 1px solid #444;
+  padding: 35px 0 40px;
+}
+
+.fact:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.big-number {
+  color: var(--cyan);
+  font-size: clamp(55px, 9vw, 110px);
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.fact p {
+  max-width: 650px;
+  margin: 15px 0 0;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.reality-copy {
+  margin-top: 80px;
+}
+
+.reality-copy p {
+  max-width: 800px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-copy .evidence-line {
+  margin-top: 50px;
+  color: var(--cyan);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.reality-sources {
+  margin-top: 80px;
+  padding-top: 25px;
+  border-top: 1px solid #444;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.reality-sources strong {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.reality-sources p {
+  max-width: 800px;
+}
+
+.reality-sources a {
+  color: var(--cyan);
+}
+
+
 /* FINAL */
 
 .final {
@@ -223,6 +332,7 @@ blockquote {
   letter-spacing: -4px;
   text-transform: uppercase;
 }
+
 
 /* FOOTER */
 
@@ -253,19 +363,43 @@ footer p {
   line-height: 1.5;
 }
 
+
+/* MOBILE */
+
 @media (max-width: 700px) {
-  h1 { letter-spacing: -4px; }
-  .construction-line { letter-spacing: -2px; }
+
+  .nav {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  h1 {
+    letter-spacing: -4px;
+  }
+
+  .construction-line {
+    letter-spacing: -2px;
+  }
+
   .analysis h2,
-  .final p { letter-spacing: -2px; }
+  .reality h2,
+  .final p {
+    letter-spacing: -2px;
+  }
+
+  .big-number {
+    letter-spacing: -3px;
+  }
 }
 </style>
 </head>
+
 
 <body>
 
 <header>
   <div class="nav">
+
     <a class="brand" href="/">
       Reform <span>Playbook</span>
     </a>
@@ -273,16 +407,23 @@ footer p {
     <a class="back" href="/">
       ← The Playbook
     </a>
+
   </div>
 </header>
 
 
 <main>
 
+
+<!-- HERO -->
+
 <section class="hero">
+
   <div class="hero-inner">
 
-    <div class="label">The target</div>
+    <div class="label">
+      The target
+    </div>
 
     <h1>
       Disabled<br>
@@ -296,13 +437,19 @@ footer p {
     </div>
 
   </div>
+
 </section>
 
 
+<!-- THE PICTURE -->
+
 <section class="construction">
+
   <div class="construction-inner">
 
-    <div class="label">The picture</div>
+    <div class="label">
+      The picture
+    </div>
 
     <div class="construction-line">
       <span>You</span> leave home and go to work.
@@ -317,17 +464,24 @@ footer p {
     </div>
 
     <div class="construction-line">
-      And Reform tells you: <span>this is unfair.</span>
+      And Reform tells you:
+      <span>this is unfair.</span>
     </div>
 
   </div>
+
 </section>
 
 
+<!-- THEIR WORDS -->
+
 <section class="evidence">
+
   <div class="evidence-inner">
 
-    <div class="label">Their words</div>
+    <div class="label">
+      Their words
+    </div>
 
     <blockquote>
       “Too many of them could work, should work, and are choosing not to.”
@@ -344,23 +498,38 @@ footer p {
     </blockquote>
 
     <div class="source">
-      <strong>Reform UK, 18 August 2026</strong>
-      Reform's plan to safeguard the future of the welfare state<br><br>
 
-      <a href="https://reformparty.uk/index.php/news/reform-s-plan-to-safeguard-the-future-of-the-welfare-state"
-         target="_blank" rel="noopener">
+      <strong>
+        Reform UK, 18 August 2026
+      </strong>
+
+      Reform's plan to safeguard the future of the welfare state
+
+      <br><br>
+
+      <a
+        href="https://reformparty.uk/index.php/news/reform-s-plan-to-safeguard-the-future-of-the-welfare-state"
+        target="_blank"
+        rel="noopener">
         Read the original Reform UK statement →
       </a>
+
     </div>
 
   </div>
+
 </section>
 
 
+<!-- THE PLAYBOOK -->
+
 <section class="analysis">
+
   <div class="analysis-inner">
 
-    <div class="label">The playbook</div>
+    <div class="label">
+      The playbook
+    </div>
 
     <h2>
       Make it<br>
@@ -396,10 +565,144 @@ footer p {
     </p>
 
   </div>
+
 </section>
 
 
+<!-- THE REALITY -->
+
+<section class="reality">
+
+  <div class="reality-inner">
+
+    <div class="label">
+      The reality
+    </div>
+
+    <h2>
+      Look beyond<br>
+      the curtains.
+    </h2>
+
+
+    <div class="fact">
+
+      <div class="big-number">
+        5.5 million
+      </div>
+
+      <p>
+        disabled people are in work in the UK.
+      </p>
+
+    </div>
+
+
+    <div class="fact">
+
+      <div class="big-number">
+        29.7 points
+      </div>
+
+      <p>
+        is the employment-rate gap between disabled and
+        non-disabled people.
+      </p>
+
+    </div>
+
+
+    <div class="fact">
+
+      <div class="big-number">
+        7.6%
+      </div>
+
+      <p>
+        of workless disabled people move into work in a year,
+        compared with 28.3% of workless non-disabled people.
+      </p>
+
+    </div>
+
+
+    <div class="fact">
+
+      <div class="big-number">
+        1.2%
+      </div>
+
+      <p>
+        of Personal Independence Payment expenditure was estimated
+        by the Department for Work and Pensions as functional-needs
+        fraud in 2025/26.
+      </p>
+
+    </div>
+
+
+    <div class="reality-copy">
+
+      <p>
+        A closed curtain tells you nothing about the person
+        behind it.
+      </p>
+
+      <p>
+        They may already work. They may be unable to work.
+        They may be trying to get back into work in a labour
+        market where disabled people are substantially less
+        likely to be employed.
+      </p>
+
+      <p>
+        Reform asks you to look at your neighbour's curtains.
+      </p>
+
+      <p class="evidence-line">
+        We'd rather you looked at the evidence.
+      </p>
+
+    </div>
+
+
+    <div class="reality-sources">
+
+      <strong>
+        Sources
+      </strong>
+
+      <p>
+        Department for Work and Pensions,
+        <a
+          href="https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025"
+          target="_blank"
+          rel="noopener">
+          The employment of disabled people 2025
+        </a>.
+      </p>
+
+      <p>
+        Department for Work and Pensions,
+        <a
+          href="https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-ending-fye-2026-estimates/fraud-and-error-in-the-benefit-system-financial-year-ending-fye-2026-estimates"
+          target="_blank"
+          rel="noopener">
+          Fraud and error in the benefit system: financial year ending 2026
+        </a>.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FINAL -->
+
 <section class="final">
+
   <div class="final-inner">
 
     <p>
@@ -413,12 +716,15 @@ footer p {
     </p>
 
   </div>
+
 </section>
+
 
 </main>
 
 
 <footer>
+
   <div class="footer-inner">
 
     <div class="footer-title">
@@ -432,6 +738,7 @@ footer p {
     </p>
 
   </div>
+
 </footer>
 
 </body>
