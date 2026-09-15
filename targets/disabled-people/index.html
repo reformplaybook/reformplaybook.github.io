@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Disabled People | The Reform Playbook</title>
+<meta name="description" content="How Reform UK talks about disability, sickness and welfare. Their words, examined.">
+
+<style>
+:root {
+  --cyan: #00c7d9;
+  --dark: #111111;
+  --white: #ffffff;
+  --offwhite: #f5f5f2;
+  --grey: #666666;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  background: var(--white);
+}
+
+a { color: inherit; }
+
+/* HEADER */
+
+header {
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+.brand span { color: var(--cyan); }
+
+.back {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* HERO */
+
+.hero {
+  background: var(--cyan);
+}
+
+.hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 28px 95px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(70px, 11vw, 150px);
+  line-height: .82;
+  letter-spacing: -7px;
+  text-transform: uppercase;
+}
+
+.hero-line {
+  margin-top: 55px;
+  max-width: 800px;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+/* CONSTRUCTION */
+
+.construction {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.construction-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 28px 100px;
+}
+
+.construction .label {
+  color: var(--cyan);
+}
+
+.construction-line {
+  padding: 18px 0;
+  border-top: 1px solid #444;
+  font-size: clamp(34px, 6vw, 76px);
+  line-height: .98;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.construction-line:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.construction-line span {
+  color: var(--cyan);
+}
+
+/* SOURCE */
+
+.evidence {
+  background: var(--offwhite);
+}
+
+.evidence-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.evidence .label {
+  color: #008c99;
+}
+
+blockquote {
+  margin: 40px 0;
+  padding: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.source {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.source strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.source a {
+  font-weight: 800;
+}
+
+/* ANALYSIS */
+
+.analysis {
+  background: var(--white);
+}
+
+.analysis-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.analysis h2 {
+  margin: 0 0 50px;
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: .9;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+.analysis p {
+  font-size: 23px;
+  line-height: 1.45;
+  margin: 0 0 30px;
+}
+
+.analysis strong {
+  background: var(--cyan);
+  padding: 2px 5px;
+}
+
+/* FINAL */
+
+.final {
+  background: var(--cyan);
+}
+
+.final-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.final p {
+  margin: 0;
+  font-size: clamp(42px, 7vw, 88px);
+  line-height: .94;
+  font-weight: 900;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 28px;
+}
+
+.footer-title {
+  color: var(--cyan);
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+footer p {
+  margin: 0;
+  max-width: 750px;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  h1 { letter-spacing: -4px; }
+  .construction-line { letter-spacing: -2px; }
+  .analysis h2,
+  .final p { letter-spacing: -2px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="/">
+      Reform <span>Playbook</span>
+    </a>
+
+    <a class="back" href="/">
+      ← The Playbook
+    </a>
+  </div>
+</header>
+
+
+<main>
+
+<section class="hero">
+  <div class="hero-inner">
+
+    <div class="label">The target</div>
+
+    <h1>
+      Disabled<br>
+      people.
+    </h1>
+
+    <div class="hero-line">
+      You go to work.<br>
+      They stay home.<br>
+      You pay for it.
+    </div>
+
+  </div>
+</section>
+
+
+<section class="construction">
+  <div class="construction-inner">
+
+    <div class="label">The picture</div>
+
+    <div class="construction-line">
+      <span>You</span> leave home and go to work.
+    </div>
+
+    <div class="construction-line">
+      <span>They</span> stay behind closed curtains.
+    </div>
+
+    <div class="construction-line">
+      <span>Your taxes</span> pay their benefits.
+    </div>
+
+    <div class="construction-line">
+      And Reform tells you: <span>this is unfair.</span>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="evidence">
+  <div class="evidence-inner">
+
+    <div class="label">Their words</div>
+
+    <blockquote>
+      “Too many of them could work, should work, and are choosing not to.”
+    </blockquote>
+
+    <blockquote>
+      “I've heard stories from you about how it feels to leave the house
+      to go to work, and see the curtains next door closed while your
+      taxes pay their benefits.”
+    </blockquote>
+
+    <blockquote>
+      “This is unfair, and it's unsustainable.”
+    </blockquote>
+
+    <div class="source">
+      <strong>Reform UK, 18 August 2026</strong>
+      Reform's plan to safeguard the future of the welfare state<br><br>
+
+      <a href="https://reformparty.uk/index.php/news/reform-s-plan-to-safeguard-the-future-of-the-welfare-state"
+         target="_blank" rel="noopener">
+        Read the original Reform UK statement →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="analysis">
+  <div class="analysis-inner">
+
+    <div class="label">The playbook</div>
+
+    <h2>
+      Make it<br>
+      personal.
+    </h2>
+
+    <p>
+      Notice how the argument is constructed.
+    </p>
+
+    <p>
+      It doesn't begin with welfare statistics or the circumstances
+      of people who cannot work.
+    </p>
+
+    <p>
+      It asks you to imagine <strong>your neighbour.</strong>
+    </p>
+
+    <p>
+      You are leaving for work. Their curtains are closed.
+      You are paying taxes. They are receiving benefits.
+    </p>
+
+    <p>
+      One person is working. One person isn't.
+      One is paying. One is taking.
+    </p>
+
+    <p>
+      Reform then supplies the conclusion:
+      <strong>“This is unfair.”</strong>
+    </p>
+
+  </div>
+</section>
+
+
+<section class="final">
+  <div class="final-inner">
+
+    <p>
+      First create<br>
+      the suspicion.<br><br>
+
+      Then tell you<br>
+      who's paying.<br><br>
+
+      You are.
+    </p>
+
+  </div>
+</section>
+
+</main>
+
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-title">
+      The Reform Playbook
+    </div>
+
+    <p>
+      An independent project examining the political rhetoric of Reform UK.
+      This website is not affiliated with, endorsed by, or associated with
+      Reform UK.
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>
