@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Civil Servants | The Reform Playbook</title>
+<meta name="description" content="How Reform UK casts an impartial civil service as a political enemy. Their words, checked against the evidence.">
+
+<style>
+:root {
+  --cyan: #00c7d9;
+  --dark: #111111;
+  --white: #ffffff;
+  --offwhite: #f5f5f2;
+  --grey: #666666;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  background: var(--white);
+}
+
+a { color: inherit; }
+
+header {
+  background: var(--white);
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+.brand span { color: var(--cyan); }
+
+.back {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero { background: var(--cyan); }
+
+.hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 28px 95px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(65px, 11vw, 145px);
+  line-height: .82;
+  letter-spacing: -7px;
+  text-transform: uppercase;
+}
+
+.hero-line {
+  margin-top: 55px;
+  max-width: 850px;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.construction {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.construction-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 28px 100px;
+}
+
+.construction .label { color: var(--cyan); }
+
+.construction-line {
+  padding: 18px 0;
+  border-top: 1px solid #444;
+  font-size: clamp(34px, 6vw, 76px);
+  line-height: .98;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.construction-line:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.construction-line span { color: var(--cyan); }
+
+.evidence { background: var(--offwhite); }
+
+.evidence-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.evidence .label { color: #008c99; }
+
+blockquote {
+  margin: 40px 0;
+  padding: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.source {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.source + .source { margin-top: 35px; }
+
+.source strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.source a { font-weight: 800; }
+
+.analysis { background: var(--white); }
+
+.analysis-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.analysis h2 {
+  margin: 0 0 50px;
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: .9;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+.analysis p {
+  font-size: 23px;
+  line-height: 1.45;
+  margin: 0 0 30px;
+}
+
+.analysis strong {
+  background: var(--cyan);
+  padding: 2px 5px;
+}
+
+.reality {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.reality-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.reality .label { color: var(--cyan); }
+
+.reality h2 {
+  margin: 0 0 70px;
+  font-size: clamp(50px, 8vw, 100px);
+  line-height: .88;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+}
+
+.rebuttal {
+  border-top: 1px solid #444;
+  padding: 40px 0 45px;
+}
+
+.rebuttal:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.rebuttal h3 {
+  margin: 0 0 18px;
+  color: var(--cyan);
+  font-size: clamp(32px, 5vw, 55px);
+  line-height: 1;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.rebuttal p {
+  max-width: 820px;
+  margin: 0 0 18px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.reality-intro {
+  max-width: 850px;
+  margin-bottom: 65px;
+}
+
+.reality-intro p {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-intro strong {
+  color: var(--cyan);
+}
+
+.reality-copy {
+  margin-top: 80px;
+}
+
+.reality-copy p {
+  max-width: 820px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-copy .evidence-line {
+  margin-top: 50px;
+  color: var(--cyan);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.reality-sources {
+  margin-top: 80px;
+  padding-top: 25px;
+  border-top: 1px solid #444;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.reality-sources strong {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.reality-sources p { max-width: 850px; }
+
+.reality-sources a { color: var(--cyan); }
+
+.final { background: var(--cyan); }
+
+.final-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.final p {
+  margin: 0;
+  font-size: clamp(42px, 7vw, 88px);
+  line-height: .94;
+  font-weight: 900;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+footer {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 28px;
+}
+
+.footer-title {
+  color: var(--cyan);
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+footer p {
+  margin: 0;
+  max-width: 750px;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  h1 { letter-spacing: -4px; }
+
+  .construction-line {
+    letter-spacing: -2px;
+  }
+
+  .analysis h2,
+  .reality h2,
+  .final p {
+    letter-spacing: -2px;
+  }
+
+  .rebuttal h3 {
+    letter-spacing: -1px;
+  }
+}
+
+/* ---- Added: per-claim structure ---- */
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--dark);
+  color: var(--white);
+  padding: 12px 18px;
+  z-index: 10;
+}
+
+.skip:focus { left: 12px; top: 12px; }
+
+a:focus-visible {
+  outline: 3px solid var(--dark);
+  outline-offset: 3px;
+}
+
+.reality a:focus-visible,
+footer a:focus-visible {
+  outline-color: var(--cyan);
+}
+
+.hero-line p { margin: 0; }
+
+.claims-nav {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.evidence h2 {
+  margin: 0 0 10px;
+  font-size: clamp(44px, 6vw, 80px);
+  line-height: .92;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+}
+
+.evidence .intro {
+  font-size: 22px;
+  line-height: 1.45;
+  max-width: 760px;
+  margin: 30px 0 0;
+}
+
+figure.quote {
+  margin: 50px 0 0;
+}
+
+figure.quote blockquote {
+  margin: 0;
+}
+
+figure.quote figcaption {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+figure.quote figcaption strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+figure.quote figcaption a { font-weight: 800; }
+
+.reality .context {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 20px;
+}
+
+.rebuttal .date {
+  display: block;
+  color: #bbb;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.fair {
+  margin-top: 60px;
+  padding: 30px 0 0;
+  border-top: 3px solid var(--cyan);
+}
+
+.fair p {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 18px;
+}
+
+.reality-sources ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  max-width: 850px;
+}
+
+.reality-sources li { margin-bottom: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* ---- Big-number facts (shared with other target pages) ---- */
+
+.fact {
+  border-top: 1px solid #444;
+  padding: 35px 0 40px;
+}
+
+.fact:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.big-number {
+  color: var(--cyan);
+  font-size: clamp(55px, 9vw, 110px);
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.fact p {
+  max-width: 650px;
+  margin: 15px 0 0;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.fact .note {
+  color: #bbb;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .big-number { letter-spacing: -3px; }
+}
+
+/* Long single-word titles need a smaller minimum size on phones */
+h1.long {
+  font-size: clamp(38px, 10.5vw, 145px);
+}
+
+@media (max-width: 700px) {
+  h1.long { letter-spacing: -2px; }
+}
+
+/* Very narrow phones: keep the big title inside the screen */
+@media (max-width: 380px) {
+  h1 { font-size: 13.5vw; }
+  h1.long { font-size: 11.5vw; }
+  .analysis h2,
+  .reality h2,
+  .evidence h2 { font-size: 11vw; }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip" href="#content">Skip to content</a>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="/">Reform <span>Playbook</span></a>
+    <a class="back" href="/"><span aria-hidden="true">←</span> The Playbook</a>
+  </div>
+</header>
+
+<main id="content">
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-inner">
+
+    <div class="label">The target</div>
+
+    <h1 class="long">Civil<br>servants.</h1>
+
+    <div class="hero-line">
+      <p>“Political appointees.”</p>
+      <p>“No longer have a job to return to.”</p>
+      <p>“Nonsensical woke definitions of gender.”</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- THE PICTURE -->
+
+<section class="construction">
+  <div class="construction-inner">
+
+    <div class="label">The picture</div>
+
+    <div class="construction-line">
+      Whitehall is <span>bloated.</span>
+    </div>
+
+    <div class="construction-line">
+      Its officials are <span>woke.</span>
+    </div>
+
+    <div class="construction-line">
+      They'll <span>block</span> a Reform government.
+    </div>
+
+    <div class="construction-line">
+      So Reform will <span>put its own people in charge.</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- THEIR WORDS -->
+
+<section class="evidence" aria-labelledby="words-title">
+  <div class="evidence-inner">
+
+    <div class="label">Their words</div>
+
+    <h2 id="words-title">In their<br>own words.</h2>
+
+    <figure class="quote">
+      <blockquote>
+        “Replace Civil Service leaders with successful professionals … who
+        are political appointees.”
+      </blockquote>
+      <figcaption>
+        <strong>Reform UK manifesto, June 2024</strong>
+        Our Contract with You, constitutional reform section. The
+        professionals would come from the private sector and would come and
+        go with each government.
+        <br><br>
+        <a href="https://assets.nationbuilder.com/reformuk/pages/253/attachments/original/1718625371/Reform_UK_Our_Contract_with_You.pdf"
+           target="_blank" rel="noopener noreferrer">
+          Read the manifesto (PDF) <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+    <figure class="quote">
+      <blockquote>
+        “Socially controversial political positions will not be acceptable
+        in the civil service.”
+      </blockquote>
+      <figcaption>
+        <strong>Danny Kruger, Reform UK, October 2025</strong>
+        Setting out Reform's plans for Whitehall. The Institute for
+        Government notes his target was diversity and inclusion culture, and
+        asks who would decide what counts as controversial.
+        <br><br>
+        <a href="https://www.instituteforgovernment.org.uk/comment/danny-kruger-government-reforms"
+           target="_blank" rel="noopener noreferrer">
+          Read the analysis <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+    <figure class="quote">
+      <blockquote>
+        “Will no longer have a job to return to.”
+      </blockquote>
+      <figcaption>
+        <strong>Danny Kruger, Reform UK, May 2026</strong>
+        On civil servants who join strikes that the civil service union PCS
+        has discussed holding against a Reform government, as reported by
+        The Spectator. Kruger says such strikes would be unlawful.
+        <br><br>
+        <a href="https://spectator.com/article/the-blob-is-already-getting-ready-to-take-down-reform/"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+    <figure class="quote">
+      <blockquote>
+        “Civil servants … who continue to buy into nonsensical woke
+        definitions of gender.”
+      </blockquote>
+      <figcaption>
+        <strong>Suella Braverman, Reform UK, 5 August 2026</strong>
+        Calling for the government to get tough with them, as the new
+        single-sex spaces code came into force, as reported by PA Media via
+        ITV News.
+        <br><br>
+        <a href="https://www.itv.com/news/2026-08-05/single-sex-spaces-code-comes-in-force-more-than-year-after-supreme-court-ruling"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- THE PLAYBOOK -->
+
+<section class="analysis" aria-labelledby="playbook-title">
+  <div class="analysis-inner">
+
+    <div class="label">The playbook</div>
+
+    <h2 id="playbook-title">Make the neutral<br>look partisan.</h2>
+
+    <p>
+      By law, civil servants must serve whichever government the country
+      elects, and keep their own politics out of it.
+    </p>
+
+    <p>
+      Reform's words treat them as an opposition in waiting. They are
+      <strong>“woke”</strong>. Their views need policing. They are expected
+      to resist. And the answer at the top is
+      <strong>political appointees</strong>.
+    </p>
+
+    <p>
+      That turns a neutral institution into a partisan one. Once senior
+      officials owe their jobs to a party, they aren't impartial any more.
+      The next government, of any colour, inherits a civil service built
+      for someone else.
+    </p>
+
+    <p>
+      Meanwhile, the image of a “bloated” Whitehall hides who most civil
+      servants actually are.
+    </p>
+
+  </div>
+</section>
+
+<!-- THE REALITY -->
+
+<section class="reality" aria-labelledby="reality-title">
+  <div class="reality-inner">
+
+    <div class="label">The reality</div>
+
+    <h2 id="reality-title">Who are<br>they, really?</h2>
+
+    <div class="fact">
+      <div class="big-number">54.9%</div>
+      <p>
+        of civil servants work in operational delivery: paying benefits and
+        pensions, running jobcentres, staffing prisons and issuing driving
+        licences. Only 6.8% work in policy.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">4 in 5</div>
+      <p>
+        civil servants work outside London. The North West alone has more
+        than 75,000.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">£37,820</div>
+      <p>
+        is the median civil service salary. In the most junior grades, it's
+        £28,020.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">557,825</div>
+      <p>
+        people worked in the civil service in March 2026. Two-thirds of them
+        work in five departments: Justice, Work and Pensions, HMRC, Defence
+        and the Home Office.
+      </p>
+      <p class="note">
+        Numbers have grown since 2016, when they were about 380,000, after
+        cuts from around 480,000 in 2010.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">2010</div>
+      <p>
+        Parliament wrote civil service impartiality into law. Civil servants
+        must be appointed on merit, through fair and open competition, and
+        must serve the government of the day, whatever its politics.
+      </p>
+    </div>
+
+    <div class="reality-copy">
+
+      <p>
+        The size and cost of the civil service is a fair argument. It has
+        grown, and other parties have promised cuts too. Reform says its
+        cuts would fall on back-office work such as policy, HR and
+        communications, rather than the frontline. One civil service union
+        has talked openly about striking against a Reform government, so
+        Reform's concern isn't invented.
+      </p>
+
+      <p>
+        But cutting jobs is one thing. Deciding which political views are
+        acceptable in the civil service, and putting party appointees in
+        charge of it, is another.
+      </p>
+
+      <p>
+        The Institute for Government, which studies how government works,
+        says there is little evidence that politically aligned officials
+        run things better than career ones.
+      </p>
+
+      <p class="evidence-line">
+        Reform describes a political enemy.
+      </p>
+
+      <p class="evidence-line">
+        Most of them deliver frontline services, from pensions and
+        jobcentres to prisons.
+      </p>
+
+    </div>
+
+    <div class="reality-sources">
+      <strong>Sources</strong>
+      <ul>
+        <li>
+          Cabinet Office,
+          <a href="https://www.gov.uk/government/statistics/civil-service-statistics-2026/statistical-bulletin-civil-service-statistics-2026"
+             target="_blank" rel="noopener noreferrer">
+            Civil Service Statistics: 2026</a>, 29 July 2026.
+        </li>
+        <li>
+          UnHerd,
+          <a href="https://unherd.com/newsroom/can-reform-really-fix-britains-broken-civil-service/"
+             target="_blank" rel="noopener noreferrer">
+            Can Reform fix Britain's broken Civil Service?</a>, October 2025
+          (civil service size in 2010 and 2016).
+        </li>
+        <li>
+          <a href="https://www.legislation.gov.uk/ukpga/2010/25/section/7/notes"
+             target="_blank" rel="noopener noreferrer">
+            Constitutional Reform and Governance Act 2010, section 7:
+            explanatory notes</a>.
+        </li>
+        <li>
+          Institute for Government,
+          <a href="https://www.instituteforgovernment.org.uk/publication/civil-service-impartiality"
+             target="_blank" rel="noopener noreferrer">
+            Appointed on merit: the value of an impartial civil service</a>,
+          March 2025.
+        </li>
+        <li>
+          The Telegraph via Yahoo News,
+          <a href="https://www.yahoo.com/news/articles/tories-pledge-sack-underperforming-civil-080000377.html"
+             target="_blank" rel="noopener noreferrer">
+            Tories pledge to sack underperforming civil servants</a>
+          (other parties' plans to cut civil service numbers).
+        </li>
+        <li>
+          Government Transformation Magazine,
+          <a href="https://www.government-transformation.com/transformation/apres-moi-le-deluge-danny-kruger-on-reforms-fixing-the-centre-plan"
+             target="_blank" rel="noopener noreferrer">
+            Danny Kruger on Reform's 'Fixing the Centre' plan</a>,
+          September 2026 (which roles Reform would cut).
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL -->
+
+<section class="final">
+  <div class="final-inner">
+    <p>
+      Civil servants<br>
+      aren't why<br>
+      Britain is broken.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-title">The Reform Playbook</div>
+
+    <p>
+      An independent project examining the political rhetoric of Reform UK.
+      This website is not affiliated with, endorsed by, or associated with
+      Reform UK.
+    </p>
+
+    <p style="margin-top: 12px;">
+      Page last checked against sources: 15 September 2026.
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>
