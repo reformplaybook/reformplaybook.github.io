@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Asylum Seekers | The Reform Playbook</title>
+<meta name="description" content="How Reform UK talks about asylum seekers and irregular migration. Their words, examined.">
+
+<style>
+:root {
+  --cyan: #00c7d9;
+  --dark: #111111;
+  --white: #ffffff;
+  --offwhite: #f5f5f2;
+  --grey: #666666;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  background: var(--white);
+}
+
+a { color: inherit; }
+
+/* HEADER */
+
+header {
+  background: var(--white);
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+.brand span { color: var(--cyan); }
+
+.back {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* HERO */
+
+.hero { background: var(--cyan); }
+
+.hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 28px 95px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(65px, 11vw, 145px);
+  line-height: .82;
+  letter-spacing: -7px;
+  text-transform: uppercase;
+}
+
+.hero-line {
+  margin-top: 55px;
+  max-width: 850px;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+/* THE PICTURE */
+
+.construction {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.construction-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 28px 100px;
+}
+
+.construction .label { color: var(--cyan); }
+
+.construction-line {
+  padding: 18px 0;
+  border-top: 1px solid #444;
+  font-size: clamp(34px, 6vw, 76px);
+  line-height: .98;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.construction-line:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.construction-line span { color: var(--cyan); }
+
+/* THEIR WORDS */
+
+.evidence {
+  background: var(--offwhite);
+}
+
+.evidence-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.evidence .label { color: #008c99; }
+
+blockquote {
+  margin: 40px 0;
+  padding: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.source {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.source + .source {
+  margin-top: 35px;
+}
+
+.source strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.source a { font-weight: 800; }
+
+/* THE PLAYBOOK */
+
+.analysis {
+  background: var(--white);
+}
+
+.analysis-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.analysis h2 {
+  margin: 0 0 50px;
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: .9;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+.analysis p {
+  font-size: 23px;
+  line-height: 1.45;
+  margin: 0 0 30px;
+}
+
+.analysis strong {
+  background: var(--cyan);
+  padding: 2px 5px;
+}
+
+/* THE REALITY */
+
+.reality {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.reality-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.reality .label { color: var(--cyan); }
+
+.reality h2 {
+  margin: 0 0 70px;
+  font-size: clamp(50px, 8vw, 100px);
+  line-height: .88;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+}
+
+.fact {
+  border-top: 1px solid #444;
+  padding: 35px 0 40px;
+}
+
+.fact:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.big-number {
+  color: var(--cyan);
+  font-size: clamp(55px, 9vw, 110px);
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.fact p {
+  max-width: 720px;
+  margin: 15px 0 0;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.reality-copy {
+  margin-top: 80px;
+}
+
+.reality-copy p {
+  max-width: 820px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-copy .evidence-line {
+  margin-top: 50px;
+  color: var(--cyan);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.reality-sources {
+  margin-top: 80px;
+  padding-top: 25px;
+  border-top: 1px solid #444;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.reality-sources strong {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.reality-sources p { max-width: 850px; }
+
+.reality-sources a { color: var(--cyan); }
+
+/* FINAL */
+
+.final { background: var(--cyan); }
+
+.final-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.final p {
+  margin: 0;
+  font-size: clamp(42px, 7vw, 88px);
+  line-height: .94;
+  font-weight: 900;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 28px;
+}
+
+.footer-title {
+  color: var(--cyan);
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+footer p {
+  margin: 0;
+  max-width: 750px;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .nav {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  h1 { letter-spacing: -4px; }
+
+  .construction-line {
+    letter-spacing: -2px;
+  }
+
+  .analysis h2,
+  .reality h2,
+  .final p {
+    letter-spacing: -2px;
+  }
+
+  .big-number { letter-spacing: -3px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+
+    <a class="brand" href="/">
+      Reform <span>Playbook</span>
+    </a>
+
+    <a class="back" href="/">
+      ← The Playbook
+    </a>
+
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-inner">
+
+    <div class="label">The target</div>
+
+    <h1>
+      Asylum<br>
+      seekers.
+    </h1>
+
+    <div class="hero-line">
+      They are coming.<br>
+      They are dangerous.<br>
+      And you're paying for them.
+    </div>
+
+  </div>
+</section>
+
+<!-- THE PICTURE -->
+
+<section class="construction">
+  <div class="construction-inner">
+
+    <div class="label">The picture</div>
+
+    <div class="construction-line">
+      Britain is being <span>invaded.</span>
+    </div>
+
+    <div class="construction-line">
+      They are being <span>dumped</span> in your community.
+    </div>
+
+    <div class="construction-line">
+      They live at <span>your expense.</span>
+    </div>
+
+    <div class="construction-line">
+      And <span>you</span> are the one being ignored.
+    </div>
+
+  </div>
+</section>
+
+<!-- THEIR WORDS -->
+
+<section class="evidence">
+  <div class="evidence-inner">
+
+    <div class="label">Their words</div>
+
+    <blockquote>
+      “Piddington will be ground zero for the invasion of Britain.”
+    </blockquote>
+
+    <blockquote>
+      “Labour are dumping 1,250 illegal migrant men here.”
+    </blockquote>
+
+    <blockquote>
+      “The local residents are terrified.”
+    </blockquote>
+
+    <div class="source">
+      <strong>Reform UK / Zia Yusuf</strong>
+      Statement concerning Piddington
+
+      <br><br>
+
+      <a
+        href="https://reformparty.uk/index.php/news/zia-yusuf-piddington-will-be-ground-zero-for-the-invasion-of-britain"
+        target="_blank"
+        rel="noopener">
+        Read the original Reform UK statement →
+      </a>
+    </div>
+
+    <blockquote>
+      “Illegal migrants will no longer live in luxury hotels at the
+      British taxpayer's expense.”
+    </blockquote>
+
+    <div class="source">
+      <strong>Reform UK</strong>
+      Operation Fortress
+
+      <br><br>
+
+      <a
+        href="https://www.reformparty.uk/news/under-operation-fortress-not-one-illegal-immigrant-will-make-it-to-britain"
+        target="_blank"
+        rel="noopener">
+        Read the original Reform UK statement →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- THE PLAYBOOK -->
+
+<section class="analysis">
+  <div class="analysis-inner">
+
+    <div class="label">The playbook</div>
+
+    <h2>
+      Turn people<br>
+      into a threat.
+    </h2>
+
+    <p>
+      Start with a complicated system involving asylum claims,
+      irregular migration, legal obligations, accommodation,
+      appeals and individual circumstances.
+    </p>
+
+    <p>
+      Then remove the complexity.
+    </p>
+
+    <p>
+      They become <strong>“illegal migrants”.</strong>
+    </p>
+
+    <p>
+      Their arrival becomes an <strong>“invasion”.</strong>
+    </p>
+
+    <p>
+      Accommodation becomes <strong>“luxury hotels”.</strong>
+    </p>
+
+    <p>
+      Housing people becomes <strong>“dumping”</strong> them
+      in your community.
+    </p>
+
+    <p>
+      Different people, circumstances and legal cases become
+      one threatening group:
+      <strong>them.</strong>
+    </p>
+
+  </div>
+</section>
+
+<!-- THE REALITY -->
+
+<section class="reality">
+  <div class="reality-inner">
+
+    <div class="label">The reality</div>
+
+    <h2>
+      An invasion?<br>
+      Look at the numbers.
+    </h2>
+
+    <div class="fact">
+
+      <div class="big-number">
+        40%
+      </div>
+
+      <p>
+        of people claiming asylum in the year ending June 2026
+        had arrived in the UK by small boat.
+      </p>
+
+    </div>
+
+    <div class="fact">
+
+      <div class="big-number">
+        41%
+      </div>
+
+      <p>
+        had previously entered the UK with a visa or other form
+        of permission before claiming asylum.
+      </p>
+
+    </div>
+
+    <div class="fact">
+
+      <div class="big-number">
+        60%
+      </div>
+
+      <p>
+        of small-boat asylum claims receiving a substantive
+        initial decision since 2018 had resulted in asylum,
+        another form of protection, or other leave by the end
+        of 2025.
+      </p>
+
+    </div>
+
+    <div class="fact">
+
+      <div class="big-number">
+        17%
+      </div>
+
+      <p>
+        of people receiving asylum support were being accommodated
+        in hotels at the end of June 2026.
+      </p>
+
+    </div>
+
+    <div class="fact">
+
+      <div class="big-number">
+        13 in 10,000
+      </div>
+
+      <p>
+        UK residents were asylum seekers receiving asylum support
+        at the end of June 2026.
+      </p>
+
+    </div>
+
+    <div class="reality-copy">
+
+      <p>
+        Irregular migration is a real policy issue.
+        So is the cost and operation of Britain's asylum system.
+      </p>
+
+      <p>
+        But those questions are not answered by pretending that
+        every asylum seeker arrived in a small boat, lives in a
+        hotel, has no legitimate protection claim or represents
+        a threat to the community in which they are housed.
+      </p>
+
+      <p>
+        Reform gives you a much simpler picture:
+      </p>
+
+      <p class="evidence-line">
+        A boat. A hotel. A dangerous man. An invasion.
+      </p>
+
+      <p>
+        The government's own statistics describe something
+        considerably more complicated.
+      </p>
+
+    </div>
+
+    <div class="reality-sources">
+
+      <strong>Sources</strong>
+
+      <p>
+        Home Office,
+        <a
+          href="https://www.gov.uk/government/statistics/immigration-system-statistics-year-ending-june-2026/how-many-people-claim-asylum-in-the-uk"
+          target="_blank"
+          rel="noopener">
+          How many people claim asylum in the UK?
+        </a>
+        Year ending June 2026.
+      </p>
+
+      <p>
+        Home Office,
+        <a
+          href="https://www.gov.uk/government/statistics/immigration-system-statistics-year-ending-march-2026/how-many-small-boat-arrivals-have-claimed-asylum-or-been-referred-to-the-national-referral-mechanism"
+          target="_blank"
+          rel="noopener">
+          How many small boat arrivals have claimed asylum?
+        </a>
+      </p>
+
+      <p>
+        Home Office,
+        <a
+          href="https://www.gov.uk/government/statistics/immigration-system-statistics-year-ending-june-2026/how-many-people-are-in-the-uk-asylum-system"
+          target="_blank"
+          rel="noopener">
+          How many people are in the UK asylum system?
+        </a>
+        Year ending June 2026.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL -->
+
+<section class="final">
+  <div class="final-inner">
+
+    <p>
+      Asylum seekers<br>
+      aren't why<br>
+      Britain is broken.
+    </p>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-title">
+      The Reform Playbook
+    </div>
+
+    <p>
+      An independent project examining the political rhetoric of Reform UK.
+      This website is not affiliated with, endorsed by, or associated with
+      Reform UK.
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>
