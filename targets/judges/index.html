@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Judges | The Reform Playbook</title>
+<meta name="description" content="How Reform UK turns judges into political opponents. Their words, checked against the evidence.">
+
+<style>
+:root {
+  --cyan: #00c7d9;
+  --dark: #111111;
+  --white: #ffffff;
+  --offwhite: #f5f5f2;
+  --grey: #666666;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  background: var(--white);
+}
+
+a { color: inherit; }
+
+header {
+  background: var(--white);
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+.brand span { color: var(--cyan); }
+
+.back {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero { background: var(--cyan); }
+
+.hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 28px 95px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(65px, 11vw, 145px);
+  line-height: .82;
+  letter-spacing: -7px;
+  text-transform: uppercase;
+}
+
+.hero-line {
+  margin-top: 55px;
+  max-width: 850px;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.construction {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.construction-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 28px 100px;
+}
+
+.construction .label { color: var(--cyan); }
+
+.construction-line {
+  padding: 18px 0;
+  border-top: 1px solid #444;
+  font-size: clamp(34px, 6vw, 76px);
+  line-height: .98;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.construction-line:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.construction-line span { color: var(--cyan); }
+
+.evidence { background: var(--offwhite); }
+
+.evidence-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.evidence .label { color: #008c99; }
+
+blockquote {
+  margin: 40px 0;
+  padding: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.source {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.source + .source { margin-top: 35px; }
+
+.source strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.source a { font-weight: 800; }
+
+.analysis { background: var(--white); }
+
+.analysis-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.analysis h2 {
+  margin: 0 0 50px;
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: .9;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+.analysis p {
+  font-size: 23px;
+  line-height: 1.45;
+  margin: 0 0 30px;
+}
+
+.analysis strong {
+  background: var(--cyan);
+  padding: 2px 5px;
+}
+
+.reality {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.reality-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.reality .label { color: var(--cyan); }
+
+.reality h2 {
+  margin: 0 0 70px;
+  font-size: clamp(50px, 8vw, 100px);
+  line-height: .88;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+}
+
+.rebuttal {
+  border-top: 1px solid #444;
+  padding: 40px 0 45px;
+}
+
+.rebuttal:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.rebuttal h3 {
+  margin: 0 0 18px;
+  color: var(--cyan);
+  font-size: clamp(32px, 5vw, 55px);
+  line-height: 1;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.rebuttal p {
+  max-width: 820px;
+  margin: 0 0 18px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.reality-intro {
+  max-width: 850px;
+  margin-bottom: 65px;
+}
+
+.reality-intro p {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-intro strong {
+  color: var(--cyan);
+}
+
+.reality-copy {
+  margin-top: 80px;
+}
+
+.reality-copy p {
+  max-width: 820px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-copy .evidence-line {
+  margin-top: 50px;
+  color: var(--cyan);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.reality-sources {
+  margin-top: 80px;
+  padding-top: 25px;
+  border-top: 1px solid #444;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.reality-sources strong {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.reality-sources p { max-width: 850px; }
+
+.reality-sources a { color: var(--cyan); }
+
+.final { background: var(--cyan); }
+
+.final-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.final p {
+  margin: 0;
+  font-size: clamp(42px, 7vw, 88px);
+  line-height: .94;
+  font-weight: 900;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+footer {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 28px;
+}
+
+.footer-title {
+  color: var(--cyan);
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+footer p {
+  margin: 0;
+  max-width: 750px;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  h1 { letter-spacing: -4px; }
+
+  .construction-line {
+    letter-spacing: -2px;
+  }
+
+  .analysis h2,
+  .reality h2,
+  .final p {
+    letter-spacing: -2px;
+  }
+
+  .rebuttal h3 {
+    letter-spacing: -1px;
+  }
+}
+
+/* ---- Added: per-claim structure ---- */
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--dark);
+  color: var(--white);
+  padding: 12px 18px;
+  z-index: 10;
+}
+
+.skip:focus { left: 12px; top: 12px; }
+
+a:focus-visible {
+  outline: 3px solid var(--dark);
+  outline-offset: 3px;
+}
+
+.reality a:focus-visible,
+footer a:focus-visible {
+  outline-color: var(--cyan);
+}
+
+.hero-line p { margin: 0; }
+
+.claims-nav {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.evidence h2 {
+  margin: 0 0 10px;
+  font-size: clamp(44px, 6vw, 80px);
+  line-height: .92;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+}
+
+.evidence .intro {
+  font-size: 22px;
+  line-height: 1.45;
+  max-width: 760px;
+  margin: 30px 0 0;
+}
+
+figure.quote {
+  margin: 50px 0 0;
+}
+
+figure.quote blockquote {
+  margin: 0;
+}
+
+figure.quote figcaption {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+figure.quote figcaption strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+figure.quote figcaption a { font-weight: 800; }
+
+.reality .context {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 20px;
+}
+
+.rebuttal .date {
+  display: block;
+  color: #bbb;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.fair {
+  margin-top: 60px;
+  padding: 30px 0 0;
+  border-top: 3px solid var(--cyan);
+}
+
+.fair p {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 18px;
+}
+
+.reality-sources ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  max-width: 850px;
+}
+
+.reality-sources li { margin-bottom: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* ---- Big-number facts (shared with other target pages) ---- */
+
+.fact {
+  border-top: 1px solid #444;
+  padding: 35px 0 40px;
+}
+
+.fact:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.big-number {
+  color: var(--cyan);
+  font-size: clamp(55px, 9vw, 110px);
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.fact p {
+  max-width: 650px;
+  margin: 15px 0 0;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.fact .note {
+  color: #bbb;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .big-number { letter-spacing: -3px; }
+}
+
+/* Long single-word titles need a smaller minimum size on phones */
+h1.long {
+  font-size: clamp(38px, 10.5vw, 145px);
+}
+
+@media (max-width: 700px) {
+  h1.long { letter-spacing: -2px; }
+}
+
+/* Very narrow phones: keep the big title inside the screen */
+@media (max-width: 380px) {
+  h1 { font-size: 13.5vw; }
+  h1.long { font-size: 11.5vw; }
+  .analysis h2,
+  .reality h2,
+  .evidence h2 { font-size: 11vw; }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip" href="#content">Skip to content</a>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="/">Reform <span>Playbook</span></a>
+    <a class="back" href="/"><span aria-hidden="true">←</span> The Playbook</a>
+  </div>
+</header>
+
+<main id="content">
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-inner">
+
+    <div class="label">The target</div>
+
+    <h1>Judges.</h1>
+
+    <div class="hero-line">
+      <p>“Activist judges.”</p>
+      <p>“Frustrate deportations.”</p>
+      <p>“An even worse state than I imagined.”</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- THE PICTURE -->
+
+<section class="construction">
+  <div class="construction-inner">
+
+    <div class="label">The picture</div>
+
+    <div class="construction-line">
+      The courts are <span>political.</span>
+    </div>
+
+    <div class="construction-line">
+      Judges are <span>on the other side.</span>
+    </div>
+
+    <div class="construction-line">
+      They <span>block</span> what you voted for.
+    </div>
+
+    <div class="construction-line">
+      And Reform will <span>stop them.</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- THEIR WORDS -->
+
+<section class="evidence" aria-labelledby="words-title">
+  <div class="evidence-inner">
+
+    <div class="label">Their words</div>
+
+    <h2 id="words-title">In their<br>own words.</h2>
+
+    <figure class="quote">
+      <blockquote>
+        “These treaties will otherwise be used by activist judges to
+        frustrate deportations.”
+      </blockquote>
+      <figcaption>
+        <strong>Reform UK, Operation Restoring Justice</strong>
+        Reform's mass deportation plan, launched in August 2025, explaining
+        why it would set aside the Refugee Convention and other treaties.
+        <br><br>
+        <a href="https://www.reform-oxfordshire.co.uk/operation-restoring-justice"
+           target="_blank" rel="noopener noreferrer">
+          Read the plan (Reform UK Oxfordshire) <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+    <figure class="quote">
+      <blockquote>
+        “Our judiciary is in an even worse state than I imagined.”
+      </blockquote>
+      <figcaption>
+        <strong>Nigel Farage, 29 May 2026</strong>
+        Responding to news that a trial judge had referred comments Farage
+        made during a live trial to the Attorney General as a possible
+        contempt of court, as reported by GB News. He added that a Reform
+        government would end what he called the politicisation of the
+        courts.
+        <br><br>
+        <a href="https://www.gbnews.com/politics/politics-news-andy-burnham-labour-greens-keir-starmer-nigel-farage"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- THE PLAYBOOK -->
+
+<section class="analysis" aria-labelledby="playbook-title">
+  <div class="analysis-inner">
+
+    <div class="label">The playbook</div>
+
+    <h2 id="playbook-title">Put the referee<br>on trial.</h2>
+
+    <p>
+      Look at an episode that came to light in May 2026.
+    </p>
+
+    <p>
+      In June 2025, while two men were on trial before a jury, Farage
+      talked publicly about their case. The judge later wrote that the
+      comments were potentially a contempt of court, because they implied
+      the defendants were guilty.
+    </p>
+
+    <p>
+      He referred the matter to the Attorney General, who brought no
+      proceedings. The judge also decided the trial could still go ahead
+      fairly.
+    </p>
+
+    <p>
+      The judge wasn't taking sides. He was protecting the right to a fair
+      trial by jury, the same right any voter would want if they were ever
+      in the dock.
+    </p>
+
+    <p>
+      Farage's answer was that the judiciary is
+      <strong>“in an even worse state than I imagined”</strong>.
+    </p>
+
+    <p>
+      That's the move. When a judge gets in the way, the judge becomes
+      <strong>“activist”</strong>. And the fix on offer isn't a better
+      argument in court. It's a new law designed so that judges can't stop
+      deportations.
+    </p>
+
+  </div>
+</section>
+
+<!-- THE REALITY -->
+
+<section class="reality" aria-labelledby="reality-title">
+  <div class="reality-inner">
+
+    <div class="label">The reality</div>
+
+    <h2 id="reality-title">Who judges<br>the judges?</h2>
+
+    <div class="fact">
+      <div class="big-number">2005</div>
+      <p>
+        Parliament passed the Constitutional Reform Act. It requires
+        ministers to uphold the continued independence of the judiciary.
+        The same Act created an independent commission to select judges on
+        merit.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">1.75%</div>
+      <p>
+        of Crown Court sentences in 2025 were reported by victims or members
+        of the public as possibly too lenient. That's 1,491 cases. The
+        Attorney General can refer sentences covered by the scheme to the
+        Court of Appeal, which can increase them.
+      </p>
+      <p class="note">
+        When a judge gets it wrong, other judges can put it right.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">1981</div>
+      <p>
+        Under the Contempt of Court Act, publishing anything that creates a
+        substantial risk of seriously prejudicing a live trial can be
+        treated as contempt of court, whatever the intention. It applies to
+        everyone, politicians included.
+      </p>
+      <p class="note">
+        It exists to stop juries being swayed by anything other than the
+        evidence.
+      </p>
+    </div>
+
+    <div class="reality-copy">
+
+      <p>
+        <strong>What happens when judges are called political?</strong>
+        The Lady Chief Justice told Parliament in 2025 that, after
+        inaccurate reporting of a judgment, judges had been doorstepped and
+        received death threats, and their families were living in fear. Her
+        annual report that year described inaccurate and unfair criticism,
+        sometimes personal, with security threats attached. A judicial
+        security taskforce has since been set up.
+      </p>
+
+      <p>
+        None of this means judges are always right, or beyond criticism.
+        The Lady Chief Justice has said so herself: judgments can and should
+        be debated, and wrong ones can be appealed. Parliament can also
+        change any law it thinks judges are applying badly.
+      </p>
+
+      <p>
+        What judges can't do is rule the way a politician wants because the
+        politician says so. That's the point of having them.
+      </p>
+
+      <p class="evidence-line">
+        Reform calls it activism.
+      </p>
+
+      <p class="evidence-line">
+        The law calls it independence.
+      </p>
+
+    </div>
+
+    <div class="reality-sources">
+      <strong>Sources</strong>
+      <ul>
+        <li>
+          ITV News Granada,
+          <a href="https://www.itv.com/news/granada/2026-05-29/airport-trial-judge-referred-nigel-farage-comments-to-attorney-general"
+             target="_blank" rel="noopener noreferrer">
+            Manchester Airport trial judge referred Nigel Farage comments to
+            Attorney General</a>, 29 May 2026.
+        </li>
+        <li>
+          Reuters via AOL,
+          <a href="https://www.aol.com/articles/uks-reform-promises-ice-style-125919749.html"
+             target="_blank" rel="noopener noreferrer">
+            UK's Reform promises ICE-style deportation agency</a> (plan to
+          block judges from intervening in deportations).
+        </li>
+        <li>
+          <a href="https://www.legislation.gov.uk/ukpga/2005/4/contents"
+             target="_blank" rel="noopener noreferrer">
+            Constitutional Reform Act 2005</a>, section 3 (judicial
+          independence) and Part 4 (judicial appointments).
+        </li>
+        <li>
+          Sentencing Academy,
+          <a href="https://www.sentencingacademy.org.uk/sentencinghub/key-sentencing-facts/unduly-lenient-sentence-scheme/"
+             target="_blank" rel="noopener noreferrer">
+            Unduly Lenient Sentence Scheme: key facts</a>, May 2026, citing
+          Attorney General's Office data.
+        </li>
+        <li>
+          <a href="https://www.legislation.gov.uk/ukpga/1981/49/section/2"
+             target="_blank" rel="noopener noreferrer">
+            Contempt of Court Act 1981, section 2</a>.
+        </li>
+        <li>
+          Law Gazette,
+          <a href="https://www.lawgazette.co.uk/news/judges-have-received-death-threats-lcj-reveals/5122472.article"
+             target="_blank" rel="noopener noreferrer">
+            Lady chief justice: judges have been doorstepped and received
+            death threats</a>, February 2025.
+        </li>
+        <li>
+          Law Gazette,
+          <a href="https://www.lawgazette.co.uk/news/judges-safety-a-growing-concern-lady-chief-justice-reports/5125093.article"
+             target="_blank" rel="noopener noreferrer">
+            Judges' safety a growing concern, lady chief justice reports</a>,
+          November 2025.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL -->
+
+<section class="final">
+  <div class="final-inner">
+    <p>
+      Judges<br>
+      aren't why<br>
+      Britain is broken.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-title">The Reform Playbook</div>
+
+    <p>
+      An independent project examining the political rhetoric of Reform UK.
+      This website is not affiliated with, endorsed by, or associated with
+      Reform UK.
+    </p>
+
+    <p style="margin-top: 12px;">
+      Page last checked against sources: 15 September 2026.
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>
