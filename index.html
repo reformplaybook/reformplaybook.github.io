@@ -151,6 +151,19 @@
     border-bottom: 1px solid #3a3a3a;
   }
 
+.target-list a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  transition: color 0.15s ease, padding-left 0.15s ease;
+}
+
+.target-list a:hover,
+.target-list a:focus {
+  color: var(--reform-cyan);
+  padding-left: 18px;
+}
+  
   /* PLAYBOOK */
 
   .playbook {
@@ -333,7 +346,7 @@
     <ul class="target-list">
       <li>Migrants.</li>
       <li>Asylum seekers.</li>
-      <li>Disabled people.</li>
+      <li><a href="/targets/disabled-people/">Disabled people.</a></li>
       <li>The unemployed.</li>
       <li>Trans people.</li>
       <li>Lawyers.</li>
