@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Experts | The Reform Playbook</title>
+<meta name="description" content="How Reform UK swaps evidence for doubt. Their words, checked against the evidence.">
+
+<style>
+:root {
+  --cyan: #00c7d9;
+  --dark: #111111;
+  --white: #ffffff;
+  --offwhite: #f5f5f2;
+  --grey: #666666;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  background: var(--white);
+}
+
+a { color: inherit; }
+
+header {
+  background: var(--white);
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+.brand span { color: var(--cyan); }
+
+.back {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero { background: var(--cyan); }
+
+.hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 28px 95px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(65px, 11vw, 145px);
+  line-height: .82;
+  letter-spacing: -7px;
+  text-transform: uppercase;
+}
+
+.hero-line {
+  margin-top: 55px;
+  max-width: 850px;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.construction {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.construction-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 28px 100px;
+}
+
+.construction .label { color: var(--cyan); }
+
+.construction-line {
+  padding: 18px 0;
+  border-top: 1px solid #444;
+  font-size: clamp(34px, 6vw, 76px);
+  line-height: .98;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.construction-line:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.construction-line span { color: var(--cyan); }
+
+.evidence { background: var(--offwhite); }
+
+.evidence-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.evidence .label { color: #008c99; }
+
+blockquote {
+  margin: 40px 0;
+  padding: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.source {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.source + .source { margin-top: 35px; }
+
+.source strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.source a { font-weight: 800; }
+
+.analysis { background: var(--white); }
+
+.analysis-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.analysis h2 {
+  margin: 0 0 50px;
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: .9;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+.analysis p {
+  font-size: 23px;
+  line-height: 1.45;
+  margin: 0 0 30px;
+}
+
+.analysis strong {
+  background: var(--cyan);
+  padding: 2px 5px;
+}
+
+.reality {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.reality-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.reality .label { color: var(--cyan); }
+
+.reality h2 {
+  margin: 0 0 70px;
+  font-size: clamp(50px, 8vw, 100px);
+  line-height: .88;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+}
+
+.rebuttal {
+  border-top: 1px solid #444;
+  padding: 40px 0 45px;
+}
+
+.rebuttal:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.rebuttal h3 {
+  margin: 0 0 18px;
+  color: var(--cyan);
+  font-size: clamp(32px, 5vw, 55px);
+  line-height: 1;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.rebuttal p {
+  max-width: 820px;
+  margin: 0 0 18px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.reality-intro {
+  max-width: 850px;
+  margin-bottom: 65px;
+}
+
+.reality-intro p {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-intro strong {
+  color: var(--cyan);
+}
+
+.reality-copy {
+  margin-top: 80px;
+}
+
+.reality-copy p {
+  max-width: 820px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-copy .evidence-line {
+  margin-top: 50px;
+  color: var(--cyan);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.reality-sources {
+  margin-top: 80px;
+  padding-top: 25px;
+  border-top: 1px solid #444;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.reality-sources strong {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.reality-sources p { max-width: 850px; }
+
+.reality-sources a { color: var(--cyan); }
+
+.final { background: var(--cyan); }
+
+.final-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.final p {
+  margin: 0;
+  font-size: clamp(42px, 7vw, 88px);
+  line-height: .94;
+  font-weight: 900;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+footer {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 28px;
+}
+
+.footer-title {
+  color: var(--cyan);
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+footer p {
+  margin: 0;
+  max-width: 750px;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  h1 { letter-spacing: -4px; }
+
+  .construction-line {
+    letter-spacing: -2px;
+  }
+
+  .analysis h2,
+  .reality h2,
+  .final p {
+    letter-spacing: -2px;
+  }
+
+  .rebuttal h3 {
+    letter-spacing: -1px;
+  }
+}
+
+/* ---- Added: per-claim structure ---- */
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--dark);
+  color: var(--white);
+  padding: 12px 18px;
+  z-index: 10;
+}
+
+.skip:focus { left: 12px; top: 12px; }
+
+a:focus-visible {
+  outline: 3px solid var(--dark);
+  outline-offset: 3px;
+}
+
+.reality a:focus-visible,
+footer a:focus-visible {
+  outline-color: var(--cyan);
+}
+
+.hero-line p { margin: 0; }
+
+.claims-nav {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.evidence h2 {
+  margin: 0 0 10px;
+  font-size: clamp(44px, 6vw, 80px);
+  line-height: .92;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+}
+
+.evidence .intro {
+  font-size: 22px;
+  line-height: 1.45;
+  max-width: 760px;
+  margin: 30px 0 0;
+}
+
+figure.quote {
+  margin: 50px 0 0;
+}
+
+figure.quote blockquote {
+  margin: 0;
+}
+
+figure.quote figcaption {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+figure.quote figcaption strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+figure.quote figcaption a { font-weight: 800; }
+
+.reality .context {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 20px;
+}
+
+.rebuttal .date {
+  display: block;
+  color: #bbb;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.fair {
+  margin-top: 60px;
+  padding: 30px 0 0;
+  border-top: 3px solid var(--cyan);
+}
+
+.fair p {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 18px;
+}
+
+.reality-sources ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  max-width: 850px;
+}
+
+.reality-sources li { margin-bottom: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* ---- Big-number facts (shared with other target pages) ---- */
+
+.fact {
+  border-top: 1px solid #444;
+  padding: 35px 0 40px;
+}
+
+.fact:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.big-number {
+  color: var(--cyan);
+  font-size: clamp(55px, 9vw, 110px);
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.fact p {
+  max-width: 650px;
+  margin: 15px 0 0;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.fact .note {
+  color: #bbb;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .big-number { letter-spacing: -3px; }
+}
+
+/* Long single-word titles need a smaller minimum size on phones */
+h1.long {
+  font-size: clamp(38px, 10.5vw, 145px);
+}
+
+@media (max-width: 700px) {
+  h1.long { letter-spacing: -2px; }
+}
+
+/* Very narrow phones: keep the big title inside the screen */
+@media (max-width: 380px) {
+  h1 { font-size: 13.5vw; }
+  h1.long { font-size: 11.5vw; }
+  .analysis h2,
+  .reality h2,
+  .evidence h2 { font-size: 11vw; }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip" href="#content">Skip to content</a>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="/">Reform <span>Playbook</span></a>
+    <a class="back" href="/"><span aria-hidden="true">←</span> The Playbook</a>
+  </div>
+</header>
+
+<main id="content">
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-inner">
+
+    <div class="label">The target</div>
+
+    <h1>Experts.</h1>
+
+    <div class="hero-line">
+      <p>“How do we know?”</p>
+      <p>“The power of the sun.”</p>
+      <p>“Better off without the OBR.”</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- THE PICTURE -->
+
+<section class="construction">
+  <div class="construction-inner">
+
+    <div class="label">The picture</div>
+
+    <div class="construction-line">
+      The experts <span>don't really know.</span>
+    </div>
+
+    <div class="construction-line">
+      Common sense <span>knows better.</span>
+    </div>
+
+    <div class="construction-line">
+      The watchdogs are <span>in the way.</span>
+    </div>
+
+    <div class="construction-line">
+      And Reform can <span>do without them.</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- THEIR WORDS -->
+
+<section class="evidence" aria-labelledby="words-title">
+  <div class="evidence-inner">
+
+    <div class="label">Their words</div>
+
+    <h2 id="words-title">In their<br>own words.</h2>
+
+    <figure class="quote">
+      <blockquote>
+        “How do we know? Our scientific knowledge of this is very small.”
+      </blockquote>
+      <figcaption>
+        <strong>Nigel Farage, June 2024</strong>
+        On BBC Radio 5 Live, after being told that today's climate change is
+        happening faster than in the past, as reported by DeSmog.
+        <br><br>
+        <a href="https://www.desmog.com/2026/08/19/what-has-reform-uk-said-about-climate-change/"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+    <figure class="quote">
+      <blockquote>
+        “Rather than arrogantly think you can stop the power of the sun.”
+      </blockquote>
+      <figcaption>
+        <strong>Richard Tice, Reform UK deputy leader, September 2026</strong>
+        Speaking to the BBC, saying the UK should adapt to the changing
+        climate, after the hottest summer on record, as reported on Yahoo
+        News.
+        <br><br>
+        <a href="https://ca.news.yahoo.com/uk-must-adapt-changing-climate-161207346.html"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+    <figure class="quote">
+      <blockquote>
+        “We have to discuss whether we would be better off without the OBR.”
+      </blockquote>
+      <figcaption>
+        <strong>Nigel Farage, January 2026</strong>
+        On the Office for Budget Responsibility, the independent body that
+        checks government spending plans, speaking to The Telegraph, as
+        reported by ITV News. A month later Robert Jenrick said Reform would
+        keep and reform the OBR rather than abolish it.
+        <br><br>
+        <a href="https://www.itv.com/news/2026-02-17/robert-jenrick-to-outline-reform-uk-plans-for-bank-of-england-and-obr"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- THE PLAYBOOK -->
+
+<section class="analysis" aria-labelledby="playbook-title">
+  <div class="analysis-inner">
+
+    <div class="label">The playbook</div>
+
+    <h2 id="playbook-title">Swap evidence<br>for doubt.</h2>
+
+    <p>
+      You don't have to disprove the evidence. You just have to make it
+      sound uncertain.
+    </p>
+
+    <p>
+      <strong>“How do we know?”</strong> turns decades of measurement into
+      a matter of opinion.
+    </p>
+
+    <p>
+      <strong>“The power of the sun”</strong> swaps something scientists
+      have measured for something that feels obvious.
+    </p>
+
+    <p>
+      And when an independent watchdog might check your numbers, you float
+      the idea that the country would be
+      <strong>better off without it</strong>.
+    </p>
+
+    <p>
+      Each move says the same thing: the people who study this for a living
+      are no better a guide than your gut.
+    </p>
+
+    <p>
+      Here's what they actually found.
+    </p>
+
+  </div>
+</section>
+
+<!-- THE REALITY -->
+
+<section class="reality" aria-labelledby="reality-title">
+  <div class="reality-inner">
+
+    <div class="label">The reality</div>
+
+    <h2 id="reality-title">How do<br>we know?</h2>
+
+    <div class="fact">
+      <div class="big-number">2021</div>
+      <p>
+        The UN's Intergovernmental Panel on Climate Change, drawing on
+        thousands of studies, concluded that it is unequivocal that human
+        activity has warmed the atmosphere, the oceans and the land.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">1950s</div>
+      <p>
+        Since then, the energy Earth receives from the Sun has shown no net
+        increase. Global temperatures have risen sharply over the same
+        period, so it's extremely unlikely the Sun caused recent warming.
+      </p>
+      <p class="note">
+        NASA. The Royal Society reaches the same conclusion from 40 years of
+        satellite measurements.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">2026</div>
+      <p>
+        brought the UK's hottest summer on record, with five separate
+        heatwaves, according to the Met Office.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">£65bn</div>
+      <p>
+        was the emergency bond-buying scheme the Bank of England announced in
+        2022, after a mini-Budget of unfunded tax cuts sent markets into
+        turmoil. The Chancellor had asked the OBR not to publish its usual
+        independent forecast alongside it.
+      </p>
+      <p class="note">
+        Economists say markets read the missing forecast as a sign the
+        government was ignoring its own watchdogs. A Bank of England
+        policymaker said at the time that sidelining the OBR made everyone's
+        information worse and added to the uncertainty.
+      </p>
+    </div>
+
+    <div class="reality-copy">
+
+      <p>
+        Experts get things wrong. Forecasts miss, and scientific estimates
+        get revised. Questioning experts is healthy, and so is asking them
+        to show their working.
+      </p>
+
+      <p>
+        To be fair to Reform, Robert Jenrick has since said the party
+        supports the OBR's purpose and would keep it, while changing how it
+        works.
+      </p>
+
+      <p>
+        But there's a difference between challenging the evidence and waving
+        it away. “How do we know?” has an answer. People measured it, for
+        decades, all over the world.
+      </p>
+
+      <p class="evidence-line">
+        Reform asks how we know.
+      </p>
+
+      <p class="evidence-line">
+        The experts wrote it down.
+      </p>
+
+    </div>
+
+    <div class="reality-sources">
+      <strong>Sources</strong>
+      <ul>
+        <li>
+          Intergovernmental Panel on Climate Change,
+          <a href="https://www.ipcc.ch/report/ar6/wg1/chapter/summary-for-policymakers/"
+             target="_blank" rel="noopener noreferrer">
+            Sixth Assessment Report, Working Group I: Summary for
+            Policymakers</a>, 2021.
+        </li>
+        <li>
+          NASA Science,
+          <a href="https://science.nasa.gov/resource/graphic-temperature-vs-solar-activity/"
+             target="_blank" rel="noopener noreferrer">
+            Temperature vs solar activity</a>.
+        </li>
+        <li>
+          The Royal Society,
+          <a href="https://royalsociety.org/news-resources/projects/climate-change-evidence-causes/question-4/"
+             target="_blank" rel="noopener noreferrer">
+            What role has the Sun played in climate change in recent
+            decades?</a>
+        </li>
+        <li>
+          Yahoo News,
+          <a href="https://ca.news.yahoo.com/uk-must-adapt-changing-climate-161207346.html"
+             target="_blank" rel="noopener noreferrer">
+            UK must adapt to changing climate, says Tice</a>, 1 September 2026
+          (Met Office summer 2026 record).
+        </li>
+        <li>
+          National Institute of Economic and Social Research,
+          <a href="https://niesr.ac.uk/blog/truss-kwarteng-mini-budget-one-year"
+             target="_blank" rel="noopener noreferrer">
+            The Truss/Kwarteng mini-Budget: one year on</a>, September 2023.
+        </li>
+        <li>
+          Sky News via 3FM,
+          <a href="https://www.three.fm/news/business/bank-of-england-official-criticises-governments-mini-budget-action-as-sidelined-obr-creates-more-uncertainty/"
+             target="_blank" rel="noopener noreferrer">
+            Bank of England official criticises government's mini-budget
+            action</a>, October 2022.
+        </li>
+        <li>
+          LBC,
+          <a href="https://www.lbc.co.uk/article/reform-uk-robert-jenrick-obr-bank-of-england-farage-5HjdSTQ_2/"
+             target="_blank" rel="noopener noreferrer">
+            Jenrick to back Bank of England and OBR independence</a>,
+          February 2026.
+        </li>
+        <li>
+          Carbon Brief,
+          <a href="https://www.carbonbrief.org/factcheck-reform-uks-45-false-or-misleading-claims-about-climate-and-energy"
+             target="_blank" rel="noopener noreferrer">
+            Factcheck: Reform UK's 45 false or misleading claims about climate
+            and energy</a>, September 2026 (further reading).
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL -->
+
+<section class="final">
+  <div class="final-inner">
+    <p>
+      Experts<br>
+      aren't why<br>
+      Britain is broken.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-title">The Reform Playbook</div>
+
+    <p>
+      An independent project examining the political rhetoric of Reform UK.
+      This website is not affiliated with, endorsed by, or associated with
+      Reform UK.
+    </p>
+
+    <p style="margin-top: 12px;">
+      Page last checked against sources: 15 September 2026.
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>
