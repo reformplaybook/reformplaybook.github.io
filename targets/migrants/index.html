@@ -501,6 +501,15 @@ figure.quote figcaption a { font-weight: 800; }
 @media (max-width: 700px) {
   .big-number { letter-spacing: -3px; }
 }
+
+/* Very narrow phones: keep the big title inside the screen */
+@media (max-width: 380px) {
+  h1 { font-size: 13.5vw; }
+  h1.long { font-size: 11.5vw; }
+  .analysis h2,
+  .reality h2,
+  .evidence h2 { font-size: 11vw; }
+}
 </style>
 </head>
 
