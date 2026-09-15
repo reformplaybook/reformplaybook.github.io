@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Migrants | The Reform Playbook</title>
+<meta name="description" content="How Reform UK turns people who came here legally into a bill to be cancelled. Their words, checked against the evidence.">
+
+<style>
+:root {
+  --cyan: #00c7d9;
+  --dark: #111111;
+  --white: #ffffff;
+  --offwhite: #f5f5f2;
+  --grey: #666666;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  background: var(--white);
+}
+
+a { color: inherit; }
+
+header {
+  background: var(--white);
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+.brand span { color: var(--cyan); }
+
+.back {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero { background: var(--cyan); }
+
+.hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 28px 95px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(65px, 11vw, 145px);
+  line-height: .82;
+  letter-spacing: -7px;
+  text-transform: uppercase;
+}
+
+.hero-line {
+  margin-top: 55px;
+  max-width: 850px;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.construction {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.construction-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 28px 100px;
+}
+
+.construction .label { color: var(--cyan); }
+
+.construction-line {
+  padding: 18px 0;
+  border-top: 1px solid #444;
+  font-size: clamp(34px, 6vw, 76px);
+  line-height: .98;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.construction-line:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.construction-line span { color: var(--cyan); }
+
+.evidence { background: var(--offwhite); }
+
+.evidence-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.evidence .label { color: #008c99; }
+
+blockquote {
+  margin: 40px 0;
+  padding: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.source {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.source + .source { margin-top: 35px; }
+
+.source strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.source a { font-weight: 800; }
+
+.analysis { background: var(--white); }
+
+.analysis-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.analysis h2 {
+  margin: 0 0 50px;
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: .9;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+.analysis p {
+  font-size: 23px;
+  line-height: 1.45;
+  margin: 0 0 30px;
+}
+
+.analysis strong {
+  background: var(--cyan);
+  padding: 2px 5px;
+}
+
+.reality {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.reality-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.reality .label { color: var(--cyan); }
+
+.reality h2 {
+  margin: 0 0 70px;
+  font-size: clamp(50px, 8vw, 100px);
+  line-height: .88;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+}
+
+.rebuttal {
+  border-top: 1px solid #444;
+  padding: 40px 0 45px;
+}
+
+.rebuttal:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.rebuttal h3 {
+  margin: 0 0 18px;
+  color: var(--cyan);
+  font-size: clamp(32px, 5vw, 55px);
+  line-height: 1;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.rebuttal p {
+  max-width: 820px;
+  margin: 0 0 18px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.reality-intro {
+  max-width: 850px;
+  margin-bottom: 65px;
+}
+
+.reality-intro p {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-intro strong {
+  color: var(--cyan);
+}
+
+.reality-copy {
+  margin-top: 80px;
+}
+
+.reality-copy p {
+  max-width: 820px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-copy .evidence-line {
+  margin-top: 50px;
+  color: var(--cyan);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.reality-sources {
+  margin-top: 80px;
+  padding-top: 25px;
+  border-top: 1px solid #444;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.reality-sources strong {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.reality-sources p { max-width: 850px; }
+
+.reality-sources a { color: var(--cyan); }
+
+.final { background: var(--cyan); }
+
+.final-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.final p {
+  margin: 0;
+  font-size: clamp(42px, 7vw, 88px);
+  line-height: .94;
+  font-weight: 900;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+footer {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 28px;
+}
+
+.footer-title {
+  color: var(--cyan);
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+footer p {
+  margin: 0;
+  max-width: 750px;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  h1 { letter-spacing: -4px; }
+
+  .construction-line {
+    letter-spacing: -2px;
+  }
+
+  .analysis h2,
+  .reality h2,
+  .final p {
+    letter-spacing: -2px;
+  }
+
+  .rebuttal h3 {
+    letter-spacing: -1px;
+  }
+}
+
+/* ---- Added: per-claim structure ---- */
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--dark);
+  color: var(--white);
+  padding: 12px 18px;
+  z-index: 10;
+}
+
+.skip:focus { left: 12px; top: 12px; }
+
+a:focus-visible {
+  outline: 3px solid var(--dark);
+  outline-offset: 3px;
+}
+
+.reality a:focus-visible,
+footer a:focus-visible {
+  outline-color: var(--cyan);
+}
+
+.hero-line p { margin: 0; }
+
+.claims-nav {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.evidence h2 {
+  margin: 0 0 10px;
+  font-size: clamp(44px, 6vw, 80px);
+  line-height: .92;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+}
+
+.evidence .intro {
+  font-size: 22px;
+  line-height: 1.45;
+  max-width: 760px;
+  margin: 30px 0 0;
+}
+
+figure.quote {
+  margin: 50px 0 0;
+}
+
+figure.quote blockquote {
+  margin: 0;
+}
+
+figure.quote figcaption {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+figure.quote figcaption strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+figure.quote figcaption a { font-weight: 800; }
+
+.reality .context {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 20px;
+}
+
+.rebuttal .date {
+  display: block;
+  color: #bbb;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.fair {
+  margin-top: 60px;
+  padding: 30px 0 0;
+  border-top: 3px solid var(--cyan);
+}
+
+.fair p {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 18px;
+}
+
+.reality-sources ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  max-width: 850px;
+}
+
+.reality-sources li { margin-bottom: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* ---- Big-number facts (shared with other target pages) ---- */
+
+.fact {
+  border-top: 1px solid #444;
+  padding: 35px 0 40px;
+}
+
+.fact:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.big-number {
+  color: var(--cyan);
+  font-size: clamp(55px, 9vw, 110px);
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.fact p {
+  max-width: 650px;
+  margin: 15px 0 0;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.fact .note {
+  color: #bbb;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .big-number { letter-spacing: -3px; }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip" href="#content">Skip to content</a>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="/">Reform <span>Playbook</span></a>
+    <a class="back" href="/"><span aria-hidden="true">←</span> The Playbook</a>
+  </div>
+</header>
+
+<main id="content">
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-inner">
+
+    <div class="label">The target</div>
+
+    <h1>Migrants.</h1>
+
+    <div class="hero-line">
+      <p>“A huge burden on the state.”</p>
+      <p>“An economic millstone.”</p>
+      <p>“Live off the state forever.”</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- THE PICTURE -->
+
+<section class="construction">
+  <div class="construction-inner">
+
+    <div class="label">The picture</div>
+
+    <div class="construction-line">
+      They came <span>in a wave.</span>
+    </div>
+
+    <div class="construction-line">
+      They <span>won't fit in.</span>
+    </div>
+
+    <div class="construction-line">
+      They'll <span>live off you forever.</span>
+    </div>
+
+    <div class="construction-line">
+      And Reform will <span>take their settlement away.</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- THEIR WORDS -->
+
+<section class="evidence" aria-labelledby="words-title">
+  <div class="evidence-inner">
+
+    <div class="label">Their words</div>
+
+    <h2 id="words-title">In their<br>own words.</h2>
+
+    <figure class="quote">
+      <blockquote>
+        “Multiculturalism has imported separate communities that reject our
+        way of life.”
+      </blockquote>
+      <figcaption>
+        <strong>Nigel Farage, June 2024</strong>
+        Leader's foreword to Reform UK's manifesto, Our Contract with You.
+        <br><br>
+        <a href="https://assets.nationbuilder.com/reformuk/pages/253/attachments/original/1718625371/Reform_UK_Our_Contract_with_You.pdf"
+           target="_blank" rel="noopener noreferrer">
+          Read the manifesto (PDF) <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+    <figure class="quote">
+      <blockquote>
+        “Going to be a huge burden on the state.”
+      </blockquote>
+      <figcaption>
+        <strong>Nigel Farage, September 2025</strong>
+        On people who came to the UK legally after 2021, launching Reform's
+        plan to abolish indefinite leave to remain, as reported by The
+        Independent.
+        <br><br>
+        <a href="https://www.aol.com/news/nigel-farage-plan-scrap-indefinite-130430157.html"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+    <figure class="quote">
+      <blockquote>
+        “Pay hundreds of billions for foreign nationals to live off the
+        state forever.”
+      </blockquote>
+      <figcaption>
+        <strong>Zia Yusuf, Reform UK head of policy, late 2025</strong>
+        Describing what he said Labour was asking of the country, as
+        reported by The Independent.
+        <br><br>
+        <a href="https://www.aol.com/news/farage-plan-scrap-indefinite-leave-085711881.html"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+    <figure class="quote">
+      <blockquote>
+        “An economic millstone that, frankly, will be catastrophic.”
+      </blockquote>
+      <figcaption>
+        <strong>Nigel Farage, April 2026</strong>
+        On the prospect of around two million people being granted
+        indefinite leave to remain, as reported by LBC.
+        <br><br>
+        <a href="https://www.lbc.co.uk/article/reform-abolish-indefinite-leave-remain-boriswave-immigration-5HjdXdb_2/"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- THE PLAYBOOK -->
+
+<section class="analysis" aria-labelledby="playbook-title">
+  <div class="analysis-inner">
+
+    <div class="label">The playbook</div>
+
+    <h2 id="playbook-title">Turn neighbours<br>into a bill.</h2>
+
+    <p>
+      Look at the words Reform uses.
+    </p>
+
+    <p>
+      <strong>Wave.</strong>
+      <strong>Burden.</strong>
+      <strong>Millstone.</strong>
+      <strong>Live off the state.</strong>
+    </p>
+
+    <p>
+      Every person becomes a cost.
+    </p>
+
+    <p>
+      These aren't people who crossed the Channel. They came on visas,
+      under rules the government set, mostly to work or to join family.
+      In most cases they can't claim benefits while they wait.
+    </p>
+
+    <p>
+      After years of following the rules, they can apply to settle.
+      Reform's plan is to abolish that right, including for many people
+      who already have it, and make them reapply under much stricter
+      conditions.
+    </p>
+
+    <p>
+      To justify it, Reform put a price on them:
+      <strong>£234 billion.</strong>
+    </p>
+
+    <p>
+      Here's what happened to that number.
+    </p>
+
+  </div>
+</section>
+
+<!-- THE REALITY -->
+
+<section class="reality" aria-labelledby="reality-title">
+  <div class="reality-inner">
+
+    <div class="label">The reality</div>
+
+    <h2 id="reality-title">Check<br>the bill.</h2>
+
+    <div class="fact">
+      <div class="big-number">£234bn</div>
+      <p>
+        was Reform's headline cost for these migrants. It came from a
+        Centre for Policy Studies report that the think tank withdrew
+        after a dispute over the numbers. The think tank says the figure
+        should no longer be used.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">£47bn</div>
+      <p>
+        is the government's migration advisers' estimate of what one
+        year's Skilled Worker arrivals (2022/23) will contribute to the
+        public finances over their lifetimes, after costs.
+      </p>
+      <p class="note">
+        Not every group pays its way. The Home Office estimates that care
+        workers and their adult dependants settling between 2026 and 2030
+        will cost about £10bn net over their lifetimes. That's a real
+        figure, and far smaller than the one Reform used.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">5 years</div>
+      <p>
+        is how long most people on work and family visas wait before they
+        can apply to settle. Until then, they generally can't claim
+        benefits. Settlement requires English, the Life in the UK test and
+        a clean criminal record.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">1 in 5</div>
+      <p>
+        NHS staff in England report a nationality other than British.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">171,000</div>
+      <p>
+        was net migration in 2025. That's nearly half the 2024 figure, and
+        the lowest level since the new immigration system began in 2021.
+      </p>
+      <p class="note">
+        ONS provisional estimate; these are official statistics in
+        development.
+      </p>
+    </div>
+
+    <div class="reality-copy">
+
+      <p>
+        <strong>A burden?</strong> It depends who you mean. Higher-paid
+        workers tend to put in more than they take out. Some lower-paid
+        routes and dependants cost more than they contribute. That is a
+        real policy question, and the government has already consulted on
+        making people wait longer and earn settlement.
+      </p>
+
+      <p>
+        <strong>“Reject our way of life”?</strong> People who settle here
+        have to pass an English requirement and a test on British life and
+        values, and keep a clean criminal record.
+      </p>
+
+      <p>
+        Reform's plan goes further than tightening the rules for newcomers.
+        It would reach back to people who were told that if they worked,
+        paid in and obeyed the law for five years, they could stay.
+        Lawyers have warned it could be challenged in the courts, and the
+        care sector has warned of staff shortages.
+      </p>
+
+      <p class="evidence-line">
+        Reform shows you a bill.
+      </p>
+
+      <p class="evidence-line">
+        Look again, and some of them are working on your hospital ward.
+      </p>
+
+    </div>
+
+    <div class="reality-sources">
+      <strong>Sources</strong>
+      <ul>
+        <li>
+          The Independent,
+          <a href="https://www.aol.com/articles/farage-plan-scrap-indefinite-leave-201102447.html"
+             target="_blank" rel="noopener noreferrer">
+            Farage's plan to scrap indefinite leave to remain dismissed as
+            "unworkable stunt"</a>, including the withdrawal of the CPS
+          figure.
+        </li>
+        <li>
+          Migration Advisory Committee,
+          <a href="https://assets.publishing.service.gov.uk/media/6938108633c7ace9c4a41e42/The_Fiscal_Impact_of_Immigration_Final__1_.pdf"
+             target="_blank" rel="noopener noreferrer">
+            The Fiscal Impact of Immigration: Static and Dynamic Estimates
+            for the UK</a> (PDF), December 2025.
+        </li>
+        <li>
+          Home Office,
+          <a href="https://www.gov.uk/government/publications/estimated-lifetime-net-fiscal-costs-for-care-workers-and-their-adult-dependants/estimated-lifetime-net-fiscal-costs-for-care-workers-and-their-adult-dependants"
+             target="_blank" rel="noopener noreferrer">
+            Estimated lifetime net fiscal costs for care workers and their
+            adult dependants</a>, 5 March 2026.
+        </li>
+        <li>
+          House of Commons Library,
+          <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-9790/"
+             target="_blank" rel="noopener noreferrer">
+            No recourse to public funds</a>.
+        </li>
+        <li>
+          Centre for Policy Studies,
+          <a href="https://cps.org.uk/wp-content/uploads/2025/09/Here-to-stay.pdf"
+             target="_blank" rel="noopener noreferrer">
+            Here to Stay?</a> (PDF), September 2025. Used here only for the
+          requirements for settlement, not for its withdrawn cost estimate.
+        </li>
+        <li>
+          House of Commons Library,
+          <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7783/"
+             target="_blank" rel="noopener noreferrer">
+            NHS staff from overseas: statistics</a>.
+        </li>
+        <li>
+          Office for National Statistics,
+          <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/longterminternationalmigrationprovisional/yearendingdecember2025"
+             target="_blank" rel="noopener noreferrer">
+            Long-term international migration, provisional: year ending
+            December 2025</a>, 21 May 2026.
+        </li>
+        <li>
+          Home Office,
+          <a href="https://www.gov.uk/government/consultations/earned-settlement/a-fairer-pathway-to-settlement-statement-and-accompanying-consultation-on-earned-settlement-accessible"
+             target="_blank" rel="noopener noreferrer">
+            A Fairer Pathway to Settlement: consultation on earned
+            settlement</a>.
+        </li>
+        <li>
+          The Independent,
+          <a href="https://www.aol.com/news/farage-plan-scrap-indefinite-leave-085711881.html"
+             target="_blank" rel="noopener noreferrer">
+            Farage's plan to scrap indefinite leave to remain would be
+            blocked in court, lawyers say</a>.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL -->
+
+<section class="final">
+  <div class="final-inner">
+    <p>
+      Migrants<br>
+      aren't why<br>
+      Britain is broken.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-title">The Reform Playbook</div>
+
+    <p>
+      An independent project examining the political rhetoric of Reform UK.
+      This website is not affiliated with, endorsed by, or associated with
+      Reform UK.
+    </p>
+
+    <p style="margin-top: 12px;">
+      Page last checked against sources: 15 September 2026.
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>
