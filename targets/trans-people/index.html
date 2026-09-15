@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Trans People | The Reform Playbook</title>
-<meta name="description" content="How Reform UK talks about trans people and 'gender ideology'. Their words, examined.">
+<meta name="description" content="How Reform UK turns trans people into an 'ideology' to be banned. Their words, checked against the evidence.">
 
 <style>
 :root {
@@ -348,38 +348,194 @@ footer p {
     letter-spacing: -1px;
   }
 }
+
+/* ---- Added: per-claim structure ---- */
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--dark);
+  color: var(--white);
+  padding: 12px 18px;
+  z-index: 10;
+}
+
+.skip:focus { left: 12px; top: 12px; }
+
+a:focus-visible {
+  outline: 3px solid var(--dark);
+  outline-offset: 3px;
+}
+
+.reality a:focus-visible,
+footer a:focus-visible {
+  outline-color: var(--cyan);
+}
+
+.hero-line p { margin: 0; }
+
+.claims-nav {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.evidence h2 {
+  margin: 0 0 10px;
+  font-size: clamp(44px, 6vw, 80px);
+  line-height: .92;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+}
+
+.evidence .intro {
+  font-size: 22px;
+  line-height: 1.45;
+  max-width: 760px;
+  margin: 30px 0 0;
+}
+
+figure.quote {
+  margin: 50px 0 0;
+}
+
+figure.quote blockquote {
+  margin: 0;
+}
+
+figure.quote figcaption {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+figure.quote figcaption strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+figure.quote figcaption a { font-weight: 800; }
+
+.reality .context {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 20px;
+}
+
+.rebuttal .date {
+  display: block;
+  color: #bbb;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.fair {
+  margin-top: 60px;
+  padding: 30px 0 0;
+  border-top: 3px solid var(--cyan);
+}
+
+.fair p {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 18px;
+}
+
+.reality-sources ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  max-width: 850px;
+}
+
+.reality-sources li { margin-bottom: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* ---- Big-number facts (shared with other target pages) ---- */
+
+.fact {
+  border-top: 1px solid #444;
+  padding: 35px 0 40px;
+}
+
+.fact:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.big-number {
+  color: var(--cyan);
+  font-size: clamp(55px, 9vw, 110px);
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.fact p {
+  max-width: 650px;
+  margin: 15px 0 0;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.fact .note {
+  color: #bbb;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .big-number { letter-spacing: -3px; }
+}
 </style>
 </head>
 
 <body>
 
+<a class="skip" href="#content">Skip to content</a>
+
 <header>
   <div class="nav">
     <a class="brand" href="/">Reform <span>Playbook</span></a>
-    <a class="back" href="/">← The Playbook</a>
+    <a class="back" href="/"><span aria-hidden="true">←</span> The Playbook</a>
   </div>
 </header>
 
-<main>
+<main id="content">
+
+<!-- HERO -->
 
 <section class="hero">
   <div class="hero-inner">
 
     <div class="label">The target</div>
 
-    <h1>
-      Trans<br>
-      people.
-    </h1>
+    <h1>Trans<br>people.</h1>
 
     <div class="hero-line">
-      Your children are at risk.<br>
-      Women's spaces are threatened.<br>
-      An ideology is to blame.
+      <p>“Transgender indoctrination.”</p>
+      <p>“Poisonous trans ideology.”</p>
+      <p>“No child is born in the wrong body.”</p>
     </div>
 
   </div>
 </section>
+
+<!-- THE PICTURE -->
 
 <section class="construction">
   <div class="construction-inner">
@@ -387,371 +543,285 @@ footer p {
     <div class="label">The picture</div>
 
     <div class="construction-line">
-      Your children need <span>protecting.</span>
+      Being trans is an <span>ideology.</span>
     </div>
 
     <div class="construction-line">
-      Women need <span>protecting.</span>
+      It is being <span>taught to your children.</span>
     </div>
 
     <div class="construction-line">
-      Institutions have embraced <span>“gender ideology”.</span>
+      It is <span>poisoning</span> your schools.
     </div>
 
     <div class="construction-line">
-      And Reform will <span>protect you.</span>
+      And Reform will <span>ban it.</span>
     </div>
 
   </div>
 </section>
 
-<section class="evidence">
+<!-- THEIR WORDS -->
+
+<section class="evidence" aria-labelledby="words-title">
   <div class="evidence-inner">
 
     <div class="label">Their words</div>
 
-    <blockquote>
-      “The puberty blockers trial is state-sanctioned child abuse.”
-    </blockquote>
+    <h2 id="words-title">In their<br>own words.</h2>
 
-    <blockquote>
-      “There are already too many young people who have been poorly advised
-      and suffered irreversible harm due to gender ideology.”
-    </blockquote>
+    <figure class="quote">
+      <blockquote>
+        “Transgender indoctrination is causing irreversible harm to children.”
+      </blockquote>
+      <figcaption>
+        <strong>Nigel Farage, June 2024</strong>
+        Leader's foreword to Reform UK's manifesto, Our Contract with You.
+        <br><br>
+        <a href="https://assets.nationbuilder.com/reformuk/pages/253/attachments/original/1718625371/Reform_UK_Our_Contract_with_You.pdf"
+           target="_blank" rel="noopener noreferrer">
+          Read the manifesto (PDF) <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
 
-    <blockquote>
-      “Only a Reform UK government will protect our children.”
-    </blockquote>
+    <figure class="quote">
+      <blockquote>
+        “Reform UK will ban the poisonous trans ideology in our schools.”
+      </blockquote>
+      <figcaption>
+        <strong>Nigel Farage, 20 June 2024</strong>
+        Post on X.
+        <br><br>
+        <a href="https://x.com/Nigel_Farage/status/1803734529489703309"
+           target="_blank" rel="noopener noreferrer">
+          Read the original post <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
 
-    <div class="source">
-      <strong>Reform UK / Suella Braverman, 25 June 2026</strong>
-      No child is born in the wrong body
+    <figure class="quote">
+      <blockquote>
+        “No child is born in the wrong body.”
+      </blockquote>
+      <figcaption>
+        <strong>Suella Braverman, Reform UK, 24 June 2026</strong>
+        Post on X, as Reform's spokesperson for education and equalities.
+        <br><br>
+        <a href="https://x.com/SuellaBraverman/status/2069810514222252187"
+           target="_blank" rel="noopener noreferrer">
+          Read the original post <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
 
-      <br><br>
-
-      <a
-        href="https://reformparty.uk/news/suella-braverman-no-child-is-born-in-the-wrong-body"
-        target="_blank"
-        rel="noopener">
-        Read the original Reform UK statement →
-      </a>
-    </div>
-
-    <blockquote>
-      “The new guidance was supposed to keep women safe.”
-    </blockquote>
-
-    <blockquote>
-      “Do the Lib Dems care more about racking up donations than they do
-      about protecting women?”
-    </blockquote>
-
-    <div class="source">
-      <strong>Reform UK / Suella Braverman, 27 July 2026</strong>
-      Dodgy trans-action: did Lib Dems sell out women's rights for cash?
-
-      <br><br>
-
-      <a
-        href="https://reformparty.uk/index.php/news/dodgy-trans-action-did-lib-dems-sell-out-women-s-rights-for-cash"
-        target="_blank"
-        rel="noopener">
-        Read the original Reform UK statement →
-      </a>
-    </div>
+    <figure class="quote">
+      <blockquote>
+        “Transgender chaos in the classroom.”
+      </blockquote>
+      <figcaption>
+        <strong>Suella Braverman, Reform UK, 17 February 2026</strong>
+        Promising to end it on her appointment, as reported by Scene.
+        <br><br>
+        <a href="https://www.scenemag.co.uk/reform-uk-plans-to-scrap-equality-act-raising-fears-for-lgbtq-protections/"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
 
   </div>
 </section>
 
-<section class="analysis">
+<!-- THE PLAYBOOK -->
+
+<section class="analysis" aria-labelledby="playbook-title">
   <div class="analysis-inner">
 
     <div class="label">The playbook</div>
 
-    <h2>
-      Make them<br>
-      a threat.
-    </h2>
+    <h2 id="playbook-title">Turn people<br>into an idea.</h2>
 
     <p>
-      The argument begins with something almost impossible to disagree with:
-      <strong>children should be safe.</strong>
+      Look at the words Reform uses.
     </p>
 
     <p>
-      So should women.
+      <strong>Ideology.</strong>
+      <strong>Indoctrination.</strong>
+      <strong>Poison.</strong>
+      <strong>Chaos.</strong>
     </p>
 
     <p>
-      There are legitimate debates about medicine for young people,
-      single-sex services and how sex and gender should be treated in law.
+      None of them describes a person.
     </p>
 
     <p>
-      But watch what happens to those debates.
+      That is the point. You can't ban a person from existing. But you can
+      promise to ban an ideology.
     </p>
 
     <p>
-      A disputed medical treatment becomes
-      <strong>“child abuse”.</strong>
+      So being trans is recast as something that is taught, spread and
+      caught, like a doctrine pushed on children. Trans people themselves
+      disappear from the argument: the trans adults who have lived quietly
+      for decades, the trans teachers, the trans parents.
     </p>
 
     <p>
-      A disagreement about policy becomes
-      <strong>“gender ideology”.</strong>
+      Then comes the threat: <strong>“irreversible harm to children”</strong>.
     </p>
 
     <p>
-      A dispute over access to particular spaces becomes a question of
-      <strong>keeping women safe.</strong>
+      And then the offer: <strong>Reform will ban it.</strong>
     </p>
 
     <p>
-      And a minority of the population becomes associated,
-      again and again, with danger to somebody else.
-    </p>
-
-    <p>
-      The political offer then becomes simple:
-      <strong>you need protecting — and Reform will protect you.</strong>
+      But the people behind the “ideology” are real, and they live here.
+      Here is what the evidence says about them.
     </p>
 
   </div>
 </section>
 
-<section class="reality">
+<!-- THE REALITY -->
+
+<section class="reality" aria-labelledby="reality-title">
   <div class="reality-inner">
 
     <div class="label">The reality</div>
 
-    <h2>
-      Where's<br>
-      the threat?
-    </h2>
+    <h2 id="reality-title">Who's really<br>under threat?</h2>
 
-    <div class="reality-intro">
-
+    <div class="fact">
+      <div class="big-number">0.5%</div>
       <p>
-        There are legitimate arguments about how the law should regulate
-        single-sex spaces.
+        of adults in England and Wales said their gender identity was
+        different from their sex registered at birth. That's about 262,000
+        people, in the 2021 Census.
       </p>
-
-      <p>
-        There are legitimate arguments about the treatment of children
-        experiencing gender dysphoria.
+      <p class="note">
+        The ONS classes these figures as official statistics in development
+        and advises that they carry more uncertainty than most census
+        results.
       </p>
-
-      <p>
-        And the Cass Review identified serious weaknesses in the evidence
-        supporting medical interventions for children and young people.
-      </p>
-
-      <p>
-        <strong>But none of that establishes Reform's larger proposition.</strong>
-      </p>
-
-      <p>
-        Reform repeatedly places trans people and “gender ideology” inside
-        a narrative about protecting children and keeping women safe.
-      </p>
-
-      <p>
-        So where is the evidence that trans people, as a group,
-        pose a threat to either?
-      </p>
-
     </div>
 
-    <div class="rebuttal">
-
-      <h3>Puberty blockers?</h3>
-
+    <div class="fact">
+      <div class="big-number">6×</div>
       <p>
-        The NHS stopped routinely commissioning puberty blockers for
-        children and young people with gender dysphoria.
+        Trans people were around six times as likely as other adults to be
+        victims of personal hate crime: 1.3% compared with 0.2%.
       </p>
-
-      <p>
-        That followed serious concerns about the quality of the clinical
-        evidence.
+      <p class="note">
+        Crime Survey for England and Wales, April 2022 to March 2025.
       </p>
-
-      <p>
-        It is evidence of uncertainty about a medical treatment.
-        It is not evidence that trans people are abusing children.
-      </p>
-
     </div>
 
-    <div class="rebuttal">
-
-      <h3>The PATHWAYS trial?</h3>
-
+    <div class="fact">
+      <div class="big-number">3,809</div>
       <p>
-        The trial exists precisely because important questions about
-        puberty suppression need better evidence.
+        transgender hate crimes were recorded by police in England and Wales
+        in the year to March 2025. The figure excludes the Metropolitan
+        Police. These crimes were less likely to end in a charge than
+        comparable crimes with no hate element.
       </p>
-
-      <p>
-        In February 2026, the medicines regulator raised concerns and
-        recruitment was paused.
+      <p class="note">
+        The Home Office warns that police-recorded figures are not a reliable
+        guide to trends over time.
       </p>
-
-      <p>
-        The protocol was then modified. The MHRA consulted independent
-        experts and required strengthened safeguards covering matters
-        including age, bone health, cognition, bleeding and information
-        about fertility preservation.
-      </p>
-
-      <p>
-        In June 2026, the MHRA concluded that the modified protocol met
-        the required regulatory standards. The Health Research Authority
-        also approved it against its ethical standards.
-      </p>
-
-      <p>
-        Calling that regulated medical research
-        <strong>“state-sanctioned child abuse”</strong> is Reform's
-        characterisation. It is not the finding of the medicines regulator.
-      </p>
-
     </div>
 
-    <div class="rebuttal">
-
-      <h3>Women's spaces?</h3>
-
+    <div class="fact">
+      <div class="big-number">2004</div>
       <p>
-        The Supreme Court has already resolved an important part of the
-        legal dispute.
+        Parliament passed the Gender Recognition Act, giving trans people
+        legal recognition. Protection from discrimination because of gender
+        reassignment dates back to 1999.
       </p>
-
-      <p>
-        In April 2025 it unanimously held that “sex”, “man” and “woman”
-        in the Equality Act 2010 refer to biological sex.
-      </p>
-
-      <p>
-        The Court also made clear that this does not remove the Equality
-        Act's protections for trans people, including protection against
-        discrimination because of gender reassignment.
-      </p>
-
-      <p>
-        The Act contains provisions governing separate and single-sex
-        services. There are therefore real legal questions about how
-        particular services and spaces should operate.
-      </p>
-
-      <p>
-        Those legal rules are not evidence that trans people collectively
-        make women unsafe.
-      </p>
-
-    </div>
-
-    <div class="rebuttal">
-
-      <h3>Schools?</h3>
-
-      <p>
-        What schools should teach children about sex and gender is a
-        legitimate subject for public policy.
-      </p>
-
-      <p>
-        Governments can set guidance. Parents can disagree with it.
-        Teachers, clinicians and politicians can argue about where the
-        boundaries should lie.
-      </p>
-
-      <p>
-        But disagreement about what children should be taught is not
-        evidence that trans people represent a danger to children.
-      </p>
-
     </div>
 
     <div class="reality-copy">
 
       <p>
-        Healthcare. Education. Single-sex services.
+        Being trans isn't a doctrine invented in classrooms. Trans people
+        have been recognised in UK law for more than twenty years.
       </p>
 
       <p>
-        Three real policy questions.
+        In April 2025, the Supreme Court ruled that “sex” in the Equality
+        Act means biological sex. It also said the ruling does not remove
+        trans people's protection from discrimination.
       </p>
 
       <p>
-        Reform connects all three to the same emotional proposition:
+        Trans people are a small minority. The official figures show that
+        they are far more likely than other adults to be targeted by hate
+        crime.
       </p>
 
       <p class="evidence-line">
-        Someone is threatening you and the people you love.
+        An ideology can't be the victim of a hate crime.
       </p>
 
       <p class="evidence-line">
-        Reform will protect you from them.
-      </p>
-
-      <p>
-        You can debate every one of these policies without turning
-        trans people into a threat.
+        People can.
       </p>
 
     </div>
 
     <div class="reality-sources">
-
       <strong>Sources</strong>
-
-      <p>
-        UK Supreme Court,
-        <a
-          href="https://www.supremecourt.uk/cases/press-summary/uksc-2024-0042"
-          target="_blank"
-          rel="noopener">
-          For Women Scotland Ltd v The Scottish Ministers [2025] UKSC 16
-        </a>.
-      </p>
-
-      <p>
-        Medicines and Healthcare products Regulatory Agency,
-        <a
-          href="https://www.gov.uk/government/news/update-on-the-pathways-clinical-trial"
-          target="_blank"
-          rel="noopener">
-          Update on the PATHWAYS clinical trial
-        </a>,
-        19 June 2026.
-      </p>
-
-      <p>
-        Department of Health and Social Care,
-        <a
-          href="https://www.gov.uk/government/news/pathways-clinical-trial-paused-following-new-mhra-advice"
-          target="_blank"
-          rel="noopener">
-          PATHWAYS clinical trial paused following new MHRA advice
-        </a>,
-        20 February 2026.
-      </p>
-
+      <ul>
+        <li>
+          Office for National Statistics,
+          <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/genderidentity/bulletins/genderidentityenglandandwales/census2021"
+             target="_blank" rel="noopener noreferrer">
+            Gender identity, England and Wales: Census 2021</a>.
+        </li>
+        <li>
+          Office for National Statistics,
+          <a href="https://www.ons.gov.uk/news/statementsandletters/onslettertotheosroncensus2021genderidentityestimates"
+             target="_blank" rel="noopener noreferrer">
+            Letter to the Office for Statistics Regulation on Census 2021
+            gender identity estimates</a>, September 2024.
+        </li>
+        <li>
+          Home Office,
+          <a href="https://www.gov.uk/government/statistics/hate-crime-england-and-wales-year-ending-march-2025/hate-crime-england-and-wales-year-ending-march-2025"
+             target="_blank" rel="noopener noreferrer">
+            Hate crime, England and Wales, year ending March 2025</a>,
+          9 October 2025. See Table 2.1, Figure 2.10 and Section 3.6.
+        </li>
+        <li>
+          <a href="https://www.legislation.gov.uk/ukpga/2004/7/contents"
+             target="_blank" rel="noopener noreferrer">
+            Gender Recognition Act 2004</a>.
+        </li>
+        <li>
+          UK Supreme Court,
+          <a href="https://supremecourt.uk/cases/press-summary/uksc-2024-0042"
+             target="_blank" rel="noopener noreferrer">
+            For Women Scotland Ltd v The Scottish Ministers [2025] UKSC 16:
+            press summary</a>. The summary also covers the 1999 gender
+            reassignment regulations.
+        </li>
+      </ul>
     </div>
 
   </div>
 </section>
 
+<!-- FINAL -->
+
 <section class="final">
   <div class="final-inner">
-
     <p>
       Trans people<br>
-      aren't a threat<br>
-      to Britain.
+      aren't why<br>
+      Britain is broken.
     </p>
-
   </div>
 </section>
 
@@ -766,6 +836,10 @@ footer p {
       An independent project examining the political rhetoric of Reform UK.
       This website is not affiliated with, endorsed by, or associated with
       Reform UK.
+    </p>
+
+    <p style="margin-top: 12px;">
+      Page last checked against sources: 15 September 2026.
     </p>
 
   </div>
