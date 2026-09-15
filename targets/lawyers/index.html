@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lawyers | The Reform Playbook</title>
+<meta name="description" content="How Reform UK blames lawyers for the law. Their words, checked against the evidence.">
+
+<style>
+:root {
+  --cyan: #00c7d9;
+  --dark: #111111;
+  --white: #ffffff;
+  --offwhite: #f5f5f2;
+  --grey: #666666;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  background: var(--white);
+}
+
+a { color: inherit; }
+
+header {
+  background: var(--white);
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+.brand span { color: var(--cyan); }
+
+.back {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero { background: var(--cyan); }
+
+.hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 28px 95px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(65px, 11vw, 145px);
+  line-height: .82;
+  letter-spacing: -7px;
+  text-transform: uppercase;
+}
+
+.hero-line {
+  margin-top: 55px;
+  max-width: 850px;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.construction {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.construction-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 28px 100px;
+}
+
+.construction .label { color: var(--cyan); }
+
+.construction-line {
+  padding: 18px 0;
+  border-top: 1px solid #444;
+  font-size: clamp(34px, 6vw, 76px);
+  line-height: .98;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.construction-line:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.construction-line span { color: var(--cyan); }
+
+.evidence { background: var(--offwhite); }
+
+.evidence-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.evidence .label { color: #008c99; }
+
+blockquote {
+  margin: 40px 0;
+  padding: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.source {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.source + .source { margin-top: 35px; }
+
+.source strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.source a { font-weight: 800; }
+
+.analysis { background: var(--white); }
+
+.analysis-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.analysis h2 {
+  margin: 0 0 50px;
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: .9;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+.analysis p {
+  font-size: 23px;
+  line-height: 1.45;
+  margin: 0 0 30px;
+}
+
+.analysis strong {
+  background: var(--cyan);
+  padding: 2px 5px;
+}
+
+.reality {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.reality-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 110px 28px;
+}
+
+.reality .label { color: var(--cyan); }
+
+.reality h2 {
+  margin: 0 0 70px;
+  font-size: clamp(50px, 8vw, 100px);
+  line-height: .88;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+}
+
+.rebuttal {
+  border-top: 1px solid #444;
+  padding: 40px 0 45px;
+}
+
+.rebuttal:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.rebuttal h3 {
+  margin: 0 0 18px;
+  color: var(--cyan);
+  font-size: clamp(32px, 5vw, 55px);
+  line-height: 1;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.rebuttal p {
+  max-width: 820px;
+  margin: 0 0 18px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.reality-intro {
+  max-width: 850px;
+  margin-bottom: 65px;
+}
+
+.reality-intro p {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-intro strong {
+  color: var(--cyan);
+}
+
+.reality-copy {
+  margin-top: 80px;
+}
+
+.reality-copy p {
+  max-width: 820px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-copy .evidence-line {
+  margin-top: 50px;
+  color: var(--cyan);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.reality-sources {
+  margin-top: 80px;
+  padding-top: 25px;
+  border-top: 1px solid #444;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.reality-sources strong {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.reality-sources p { max-width: 850px; }
+
+.reality-sources a { color: var(--cyan); }
+
+.final { background: var(--cyan); }
+
+.final-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 100px 28px;
+}
+
+.final p {
+  margin: 0;
+  font-size: clamp(42px, 7vw, 88px);
+  line-height: .94;
+  font-weight: 900;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+footer {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 28px;
+}
+
+.footer-title {
+  color: var(--cyan);
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+footer p {
+  margin: 0;
+  max-width: 750px;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  h1 { letter-spacing: -4px; }
+
+  .construction-line {
+    letter-spacing: -2px;
+  }
+
+  .analysis h2,
+  .reality h2,
+  .final p {
+    letter-spacing: -2px;
+  }
+
+  .rebuttal h3 {
+    letter-spacing: -1px;
+  }
+}
+
+/* ---- Added: per-claim structure ---- */
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--dark);
+  color: var(--white);
+  padding: 12px 18px;
+  z-index: 10;
+}
+
+.skip:focus { left: 12px; top: 12px; }
+
+a:focus-visible {
+  outline: 3px solid var(--dark);
+  outline-offset: 3px;
+}
+
+.reality a:focus-visible,
+footer a:focus-visible {
+  outline-color: var(--cyan);
+}
+
+.hero-line p { margin: 0; }
+
+.claims-nav {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.evidence h2 {
+  margin: 0 0 10px;
+  font-size: clamp(44px, 6vw, 80px);
+  line-height: .92;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+}
+
+.evidence .intro {
+  font-size: 22px;
+  line-height: 1.45;
+  max-width: 760px;
+  margin: 30px 0 0;
+}
+
+figure.quote {
+  margin: 50px 0 0;
+}
+
+figure.quote blockquote {
+  margin: 0;
+}
+
+figure.quote figcaption {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+figure.quote figcaption strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+figure.quote figcaption a { font-weight: 800; }
+
+.reality .context {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 20px;
+}
+
+.rebuttal .date {
+  display: block;
+  color: #bbb;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.fair {
+  margin-top: 60px;
+  padding: 30px 0 0;
+  border-top: 3px solid var(--cyan);
+}
+
+.fair p {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 18px;
+}
+
+.reality-sources ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  max-width: 850px;
+}
+
+.reality-sources li { margin-bottom: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* ---- Big-number facts (shared with other target pages) ---- */
+
+.fact {
+  border-top: 1px solid #444;
+  padding: 35px 0 40px;
+}
+
+.fact:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.big-number {
+  color: var(--cyan);
+  font-size: clamp(55px, 9vw, 110px);
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.fact p {
+  max-width: 650px;
+  margin: 15px 0 0;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.fact .note {
+  color: #bbb;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .big-number { letter-spacing: -3px; }
+}
+
+/* Long single-word titles need a smaller minimum size on phones */
+h1.long {
+  font-size: clamp(38px, 10.5vw, 145px);
+}
+
+@media (max-width: 700px) {
+  h1.long { letter-spacing: -2px; }
+}
+
+/* Very narrow phones: keep the big title inside the screen */
+@media (max-width: 380px) {
+  h1 { font-size: 13.5vw; }
+  h1.long { font-size: 11.5vw; }
+  .analysis h2,
+  .reality h2,
+  .evidence h2 { font-size: 11vw; }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip" href="#content">Skip to content</a>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="/">Reform <span>Playbook</span></a>
+    <a class="back" href="/"><span aria-hidden="true">←</span> The Playbook</a>
+  </div>
+</header>
+
+<main id="content">
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-inner">
+
+    <div class="label">The target</div>
+
+    <h1>Lawyers.</h1>
+
+    <div class="hero-line">
+      <p>“Human rights lawyers.”</p>
+      <p>“Left-wing lawyers.”</p>
+      <p>“Blocking their wishes.”</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- THE PICTURE -->
+
+<section class="construction">
+  <div class="construction-inner">
+
+    <div class="label">The picture</div>
+
+    <div class="construction-line">
+      You want <span>something done.</span>
+    </div>
+
+    <div class="construction-line">
+      <span>Lawyers</span> block it.
+    </div>
+
+    <div class="construction-line">
+      They're <span>on the other side.</span>
+    </div>
+
+    <div class="construction-line">
+      And Reform will <span>get them out of the way.</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- THEIR WORDS -->
+
+<section class="evidence" aria-labelledby="words-title">
+  <div class="evidence-inner">
+
+    <div class="label">Their words</div>
+
+    <h2 id="words-title">In their<br>own words.</h2>
+
+    <figure class="quote">
+      <blockquote>
+        “On the side of outdated international treaties and human rights
+        lawyers?”
+      </blockquote>
+      <figcaption>
+        <strong>Nigel Farage, August 2025</strong>
+        Asking whether Keir Starmer was on the side of the British people or
+        of treaties and lawyers, in a Telegraph article setting out Reform's
+        mass deportation plan, as reported by LBC.
+        <br><br>
+        <a href="https://www.lbc.co.uk/article/farage-scrap-human-rights-deport-asylum-5HjdBS5_2/"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+    <figure class="quote">
+      <blockquote>
+        “The British people will not accept left-wing lawyers blocking their
+        wishes any longer.”
+      </blockquote>
+      <figcaption>
+        <strong>Reform UK spokesperson, 2025</strong>
+        Responding to lawyers who said Reform's plan to scrap indefinite
+        leave to remain could be challenged in court, as reported by The
+        Independent.
+        <br><br>
+        <a href="https://www.aol.com/news/farage-plan-scrap-indefinite-leave-085711881.html"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+    <figure class="quote">
+      <blockquote>
+        “Protect our servicemen and women … from civil law and human rights
+        lawyers.”
+      </blockquote>
+      <figcaption>
+        <strong>Reform UK manifesto, June 2024</strong>
+        Our Contract with You, defence section. The same document promises
+        no legal aid for non-citizens.
+        <br><br>
+        <a href="https://assets.nationbuilder.com/reformuk/pages/253/attachments/original/1718625371/Reform_UK_Our_Contract_with_You.pdf"
+           target="_blank" rel="noopener noreferrer">
+          Read the manifesto (PDF) <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- THE PLAYBOOK -->
+
+<section class="analysis" aria-labelledby="playbook-title">
+  <div class="analysis-inner">
+
+    <div class="label">The playbook</div>
+
+    <h2 id="playbook-title">Blame the<br>messenger.</h2>
+
+    <p>
+      A lawyer's job is to argue a client's case under laws that Parliament
+      passed. A judge decides who is right.
+    </p>
+
+    <p>
+      Reform's words skip both of those facts.
+    </p>
+
+    <p>
+      The lawyer becomes <strong>“left-wing”</strong>, as if taking the case
+      were a political act. A legal right becomes something lawyers are
+      <strong>“blocking”</strong>, as if the judge weren't there. Soldiers
+      need protecting <strong>from lawyers</strong>, not from the laws the
+      lawyers are applying.
+    </p>
+
+    <p>
+      This matters because blaming lawyers hides the real choice.
+    </p>
+
+    <p>
+      Reform's plan is to leave the European Convention on Human Rights,
+      scrap the Human Rights Act, and set aside other treaties it calls
+      roadblocks.
+    </p>
+
+    <p>
+      That's an argument about the law. It's easier to win if you make it
+      about the lawyers.
+    </p>
+
+  </div>
+</section>
+
+<!-- THE REALITY -->
+
+<section class="reality" aria-labelledby="reality-title">
+  <div class="reality-inner">
+
+    <div class="label">The reality</div>
+
+    <h2 id="reality-title">Who actually<br>decides?</h2>
+
+    <div class="fact">
+      <div class="big-number">38%</div>
+      <p>
+        of immigration appeals decided by a judge in April to June 2026
+        were allowed, meaning the Home Office decision didn't stand. For
+        asylum appeals, it was 39%.
+      </p>
+      <p class="note">
+        About 7,500 appeals were decided at a hearing or on the papers that
+        quarter.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">42%</div>
+      <p>
+        of sampled Home Office asylum decisions in the twelve months to May
+        2025 had significant errors or failed quality checks.
+      </p>
+      <p class="note">
+        National Audit Office figure, as reported by Free Movement.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">14%</div>
+      <p>
+        of immigration judicial review applications considered by judges in
+        April to June 2026 were allowed to go ahead to a full hearing. The
+        courts already filter out most challenges at the first stage.
+      </p>
+    </div>
+
+    <div class="fact">
+      <div class="big-number">rC29</div>
+      <p>
+        is the barristers' cab-rank rule. A self-employed barrister must
+        accept a case in their field whoever the client is, and whatever
+        they think of the client or the cause.
+      </p>
+      <p class="note">
+        Taking a case is a professional duty, not a political statement.
+      </p>
+    </div>
+
+    <div class="reality-copy">
+
+      <p>
+        <strong>Lawyers have been targeted before.</strong> In September 2020, a man
+        with a knife walked into Duncan Lewis, a London firm with a
+        specialist immigration team, and demanded to see its head of
+        immigration law. He said he had been prompted by a newspaper article
+        about the firm's work. In 2024, a jury found he had prepared an act
+        of terrorism and made threats to kill.
+      </p>
+
+      <p>
+        The attack came four days after the then Home Secretary blamed
+        “activist lawyers” for frustrating deportations. The Law Society's
+        president later called it the first example of a worrying new
+        trend.
+      </p>
+
+      <p>
+        Some legal challenges are weak, and some come late and are
+        frustrating. The system already filters them, and judges throw many
+        out. You can argue that the law gives people too many grounds to
+        appeal. That is an argument about the law, and it should be made in
+        the open.
+      </p>
+
+      <p class="evidence-line">
+        Reform blames the lawyer who reads out the law.
+      </p>
+
+      <p class="evidence-line">
+        What it wants to change is the law itself.
+      </p>
+
+    </div>
+
+    <div class="reality-sources">
+      <strong>Sources</strong>
+      <ul>
+        <li>
+          Ministry of Justice,
+          <a href="https://www.gov.uk/government/statistics/tribunals-statistics-quarterly-april-to-june-2026/tribunal-statistics-quarterly-april-to-june-2026"
+             target="_blank" rel="noopener noreferrer">
+            Tribunal Statistics Quarterly: April to June 2026</a>,
+          10 September 2026. See section 5.
+        </li>
+        <li>
+          Free Movement,
+          <a href="https://freemovement.org.uk/first-tier-tribunal-appeal-receipts-up-123-in-a-year-amid-continuing-concerns-about-home-office-decision-making/"
+             target="_blank" rel="noopener noreferrer">
+            First-tier Tribunal appeal receipts up 123% in a year</a>,
+          December 2025, citing the National Audit Office.
+        </li>
+        <li>
+          Bar Standards Board,
+          <a href="https://www.barstandardsboard.org.uk/the-bsb-handbook.html?part=&amp;audience=&amp;q=cab+rank"
+             target="_blank" rel="noopener noreferrer">
+            The BSB Handbook</a>, rules rC29 and rC30.
+        </li>
+        <li>
+          BBC News via Yahoo,
+          <a href="https://www.yahoo.com/news/court-finds-neo-nazi-planned-102648907.html"
+             target="_blank" rel="noopener noreferrer">
+            Court finds neo-Nazi planned attack at law firm</a>,
+          December 2024.
+        </li>
+        <li>
+          Law Gazette,
+          <a href="https://www.lawgazette.co.uk/news/activist-lawyers-row-government-silent-on-alleged-knife-attack/5105966.article"
+             target="_blank" rel="noopener noreferrer">
+            'Activist lawyers' row: government silent on alleged knife
+            attack</a>, October 2020.
+        </li>
+        <li>
+          LBC,
+          <a href="https://www.lbc.co.uk/article/farage-scrap-human-rights-deport-asylum-5HjdBS5_2/"
+             target="_blank" rel="noopener noreferrer">
+            Farage vows to scrap human rights law</a>, August 2025 (Reform's
+            ECHR and Human Rights Act plans).
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL -->
+
+<section class="final">
+  <div class="final-inner">
+    <p>
+      Lawyers<br>
+      aren't why<br>
+      Britain is broken.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-title">The Reform Playbook</div>
+
+    <p>
+      An independent project examining the political rhetoric of Reform UK.
+      This website is not affiliated with, endorsed by, or associated with
+      Reform UK.
+    </p>
+
+    <p style="margin-top: 12px;">
+      Page last checked against sources: 15 September 2026.
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>
