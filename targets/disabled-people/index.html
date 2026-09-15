@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Disabled People | The Reform Playbook</title>
-<meta name="description" content="How Reform UK talks about disability, sickness and welfare. Their words, examined.">
+<meta name="description" content="How Reform UK decides which disabled people count, and casts doubt on the rest. Their words, checked against the evidence.">
 
 <style>
 :root {
@@ -16,13 +16,9 @@
   --grey: #666666;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
@@ -31,12 +27,7 @@ body {
   background: var(--white);
 }
 
-a {
-  color: inherit;
-}
-
-
-/* HEADER */
+a { color: inherit; }
 
 header {
   background: var(--white);
@@ -60,9 +51,7 @@ header {
   text-decoration: none;
 }
 
-.brand span {
-  color: var(--cyan);
-}
+.brand span { color: var(--cyan); }
 
 .back {
   font-size: 13px;
@@ -71,12 +60,7 @@ header {
   letter-spacing: 1px;
 }
 
-
-/* HERO */
-
-.hero {
-  background: var(--cyan);
-}
+.hero { background: var(--cyan); }
 
 .hero-inner {
   max-width: 1200px;
@@ -94,7 +78,7 @@ header {
 
 h1 {
   margin: 0;
-  font-size: clamp(70px, 11vw, 150px);
+  font-size: clamp(65px, 11vw, 145px);
   line-height: .82;
   letter-spacing: -7px;
   text-transform: uppercase;
@@ -102,15 +86,12 @@ h1 {
 
 .hero-line {
   margin-top: 55px;
-  max-width: 800px;
+  max-width: 850px;
   font-size: clamp(28px, 4vw, 48px);
   line-height: 1.05;
   font-weight: 900;
   letter-spacing: -2px;
 }
-
-
-/* THE PICTURE */
 
 .construction {
   background: var(--dark);
@@ -123,9 +104,7 @@ h1 {
   padding: 90px 28px 100px;
 }
 
-.construction .label {
-  color: var(--cyan);
-}
+.construction .label { color: var(--cyan); }
 
 .construction-line {
   padding: 18px 0;
@@ -140,16 +119,9 @@ h1 {
   border-bottom: 1px solid #444;
 }
 
-.construction-line span {
-  color: var(--cyan);
-}
+.construction-line span { color: var(--cyan); }
 
-
-/* THEIR WORDS */
-
-.evidence {
-  background: var(--offwhite);
-}
+.evidence { background: var(--offwhite); }
 
 .evidence-inner {
   max-width: 900px;
@@ -157,9 +129,7 @@ h1 {
   padding: 100px 28px;
 }
 
-.evidence .label {
-  color: #008c99;
-}
+.evidence .label { color: #008c99; }
 
 blockquote {
   margin: 40px 0;
@@ -178,21 +148,16 @@ blockquote {
   line-height: 1.5;
 }
 
+.source + .source { margin-top: 35px; }
+
 .source strong {
   display: block;
   margin-bottom: 5px;
 }
 
-.source a {
-  font-weight: 800;
-}
+.source a { font-weight: 800; }
 
-
-/* THE PLAYBOOK */
-
-.analysis {
-  background: var(--white);
-}
+.analysis { background: var(--white); }
 
 .analysis-inner {
   max-width: 900px;
@@ -219,9 +184,6 @@ blockquote {
   padding: 2px 5px;
 }
 
-
-/* THE REALITY */
-
 .reality {
   background: var(--dark);
   color: var(--white);
@@ -233,9 +195,7 @@ blockquote {
   padding: 110px 28px;
 }
 
-.reality .label {
-  color: var(--cyan);
-}
+.reality .label { color: var(--cyan); }
 
 .reality h2 {
   margin: 0 0 70px;
@@ -245,28 +205,43 @@ blockquote {
   text-transform: uppercase;
 }
 
-.fact {
+.rebuttal {
   border-top: 1px solid #444;
-  padding: 35px 0 40px;
+  padding: 40px 0 45px;
 }
 
-.fact:last-of-type {
+.rebuttal:last-of-type {
   border-bottom: 1px solid #444;
 }
 
-.big-number {
+.rebuttal h3 {
+  margin: 0 0 18px;
   color: var(--cyan);
-  font-size: clamp(55px, 9vw, 110px);
-  line-height: .9;
-  font-weight: 900;
-  letter-spacing: -5px;
+  font-size: clamp(32px, 5vw, 55px);
+  line-height: 1;
+  letter-spacing: -2px;
+  text-transform: uppercase;
 }
 
-.fact p {
-  max-width: 650px;
-  margin: 15px 0 0;
+.rebuttal p {
+  max-width: 820px;
+  margin: 0 0 18px;
   font-size: 22px;
-  line-height: 1.35;
+  line-height: 1.4;
+}
+
+.reality-intro {
+  max-width: 850px;
+  margin-bottom: 65px;
+}
+
+.reality-intro p {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.reality-intro strong {
+  color: var(--cyan);
 }
 
 .reality-copy {
@@ -274,7 +249,7 @@ blockquote {
 }
 
 .reality-copy p {
-  max-width: 800px;
+  max-width: 820px;
   font-size: 24px;
   line-height: 1.4;
 }
@@ -303,20 +278,11 @@ blockquote {
   letter-spacing: 1px;
 }
 
-.reality-sources p {
-  max-width: 800px;
-}
+.reality-sources p { max-width: 850px; }
 
-.reality-sources a {
-  color: var(--cyan);
-}
+.reality-sources a { color: var(--cyan); }
 
-
-/* FINAL */
-
-.final {
-  background: var(--cyan);
-}
+.final { background: var(--cyan); }
 
 .final-inner {
   max-width: 1000px;
@@ -332,9 +298,6 @@ blockquote {
   letter-spacing: -4px;
   text-transform: uppercase;
 }
-
-
-/* FOOTER */
 
 footer {
   background: var(--dark);
@@ -363,19 +326,13 @@ footer p {
   line-height: 1.5;
 }
 
-
-/* MOBILE */
-
 @media (max-width: 700px) {
-
   .nav {
     align-items: flex-start;
     gap: 20px;
   }
 
-  h1 {
-    letter-spacing: -4px;
-  }
+  h1 { letter-spacing: -4px; }
 
   .construction-line {
     letter-spacing: -2px;
@@ -387,275 +344,437 @@ footer p {
     letter-spacing: -2px;
   }
 
-  .big-number {
-    letter-spacing: -3px;
+  .rebuttal h3 {
+    letter-spacing: -1px;
   }
+}
+
+/* ---- Added: per-claim structure ---- */
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--dark);
+  color: var(--white);
+  padding: 12px 18px;
+  z-index: 10;
+}
+
+.skip:focus { left: 12px; top: 12px; }
+
+a:focus-visible {
+  outline: 3px solid var(--dark);
+  outline-offset: 3px;
+}
+
+.reality a:focus-visible,
+footer a:focus-visible {
+  outline-color: var(--cyan);
+}
+
+.hero-line p { margin: 0; }
+
+.claims-nav {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.evidence h2 {
+  margin: 0 0 10px;
+  font-size: clamp(44px, 6vw, 80px);
+  line-height: .92;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+}
+
+.evidence .intro {
+  font-size: 22px;
+  line-height: 1.45;
+  max-width: 760px;
+  margin: 30px 0 0;
+}
+
+figure.quote {
+  margin: 50px 0 0;
+}
+
+figure.quote blockquote {
+  margin: 0;
+}
+
+figure.quote figcaption {
+  border-top: 3px solid var(--dark);
+  padding-top: 20px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+figure.quote figcaption strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+figure.quote figcaption a { font-weight: 800; }
+
+.reality .context {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 20px;
+}
+
+.rebuttal .date {
+  display: block;
+  color: #bbb;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.fair {
+  margin-top: 60px;
+  padding: 30px 0 0;
+  border-top: 3px solid var(--cyan);
+}
+
+.fair p {
+  max-width: 820px;
+  font-size: 22px;
+  line-height: 1.45;
+  margin: 0 0 18px;
+}
+
+.reality-sources ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  max-width: 850px;
+}
+
+.reality-sources li { margin-bottom: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* ---- Big-number facts (shared with other target pages) ---- */
+
+.fact {
+  border-top: 1px solid #444;
+  padding: 35px 0 40px;
+}
+
+.fact:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+.big-number {
+  color: var(--cyan);
+  font-size: clamp(55px, 9vw, 110px);
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.fact p {
+  max-width: 650px;
+  margin: 15px 0 0;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.fact .note {
+  color: #bbb;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .big-number { letter-spacing: -3px; }
 }
 </style>
 </head>
 
-
 <body>
+
+<a class="skip" href="#content">Skip to content</a>
 
 <header>
   <div class="nav">
-
-    <a class="brand" href="/">
-      Reform <span>Playbook</span>
-    </a>
-
-    <a class="back" href="/">
-      ← The Playbook
-    </a>
-
+    <a class="brand" href="/">Reform <span>Playbook</span></a>
+    <a class="back" href="/"><span aria-hidden="true">←</span> The Playbook</a>
   </div>
 </header>
 
-
-<main>
-
+<main id="content">
 
 <!-- HERO -->
 
 <section class="hero">
-
   <div class="hero-inner">
 
-    <div class="label">
-      The target
-    </div>
+    <div class="label">The target</div>
 
-    <h1>
-      Disabled<br>
-      people.
-    </h1>
+    <h1>Disabled<br>people.</h1>
 
     <div class="hero-line">
-      You go to work.<br>
-      They stay home.<br>
-      You pay for it.
+      <p>“The curtains next door closed.”</p>
+      <p>“An anxiety generation.”</p>
+      <p>“Not an epidemic of broken backs and lost limbs.”</p>
     </div>
 
   </div>
-
 </section>
-
 
 <!-- THE PICTURE -->
 
 <section class="construction">
-
   <div class="construction-inner">
 
-    <div class="label">
-      The picture
+    <div class="label">The picture</div>
+
+    <div class="construction-line">
+      Your neighbour's <span>curtains are closed.</span>
     </div>
 
     <div class="construction-line">
-      <span>You</span> leave home and go to work.
+      They're <span>not really ill.</span>
     </div>
 
     <div class="construction-line">
-      <span>They</span> stay behind closed curtains.
+      They're <span>just anxious.</span>
     </div>
 
     <div class="construction-line">
-      <span>Your taxes</span> pay their benefits.
-    </div>
-
-    <div class="construction-line">
-      And Reform tells you:
-      <span>this is unfair.</span>
+      And <span>your taxes</span> pay for it.
     </div>
 
   </div>
-
 </section>
-
 
 <!-- THEIR WORDS -->
 
-<section class="evidence">
-
+<section class="evidence" aria-labelledby="words-title">
   <div class="evidence-inner">
 
-    <div class="label">
-      Their words
-    </div>
+    <div class="label">Their words</div>
 
-    <blockquote>
-      “Too many of them could work, should work, and are choosing not to.”
-    </blockquote>
+    <h2 id="words-title">In their<br>own words.</h2>
 
-    <blockquote>
-      “I've heard stories from you about how it feels to leave the house
-      to go to work, and see the curtains next door closed while your
-      taxes pay their benefits.”
-    </blockquote>
+    <figure class="quote">
+      <blockquote>
+        “This is not an epidemic of broken backs and lost limbs.”
+      </blockquote>
+      <figcaption>
+        <strong>Robert Jenrick, Reform UK shadow chancellor, 16 August 2026</strong>
+        On the 6.9 million people receiving disability benefits, launching
+        Reform's welfare plan, as reported by ITV News.
+        <br><br>
+        <a href="https://www.itv.com/news/2026-08-16/reform-uk-vows-to-cut-welfare-system-to-save-50-billion"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
 
-    <blockquote>
-      “This is unfair, and it's unsustainable.”
-    </blockquote>
+    <figure class="quote">
+      <blockquote>
+        “See the curtains next door closed while your taxes pay their
+        benefits.”
+      </blockquote>
+      <figcaption>
+        <strong>Robert Jenrick, Reform UK, 18 August 2026</strong>
+        Reform's plan to safeguard the future of the welfare state. He
+        describes what voters have told him about their neighbours on
+        out-of-work benefits.
+        <br><br>
+        <a href="https://reformparty.uk/news/reform-s-plan-to-safeguard-the-future-of-the-welfare-state"
+           target="_blank" rel="noopener noreferrer">
+          Read the original Reform UK statement <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
 
-    <div class="source">
+    <figure class="quote">
+      <blockquote>
+        “The alarm clock generation is now being replaced by an anxiety
+        generation.”
+      </blockquote>
+      <figcaption>
+        <strong>Lee Anderson, Reform UK welfare spokesman, 29 October 2025</strong>
+        Announcing plans to stop PIP for people with anxiety, as reported by
+        ITV News.
+        <br><br>
+        <a href="https://www.itv.com/news/2025-10-29/reform-pledge-to-scrap-benefits-for-people-with-non-serious-anxiety"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
 
-      <strong>
-        Reform UK, 18 August 2026
-      </strong>
-
-      Reform's plan to safeguard the future of the welfare state
-
-      <br><br>
-
-      <a
-        href="https://reformparty.uk/index.php/news/reform-s-plan-to-safeguard-the-future-of-the-welfare-state"
-        target="_blank"
-        rel="noopener">
-        Read the original Reform UK statement →
-      </a>
-
-    </div>
+    <figure class="quote">
+      <blockquote>
+        “Labelling young people disabled because they have the odd bout of
+        anxiety.”
+      </blockquote>
+      <figcaption>
+        <strong>Lee Anderson, Reform UK, 29 October 2025</strong>
+        What he said the government should stop doing, as reported by the
+        BBC.
+        <br><br>
+        <a href="https://www.aol.com/articles/reform-proposes-cut-pip-payments-134616053.html"
+           target="_blank" rel="noopener noreferrer">
+          Read the report <span aria-hidden="true">→</span>
+        </a>
+      </figcaption>
+    </figure>
 
   </div>
-
 </section>
-
 
 <!-- THE PLAYBOOK -->
 
-<section class="analysis">
-
+<section class="analysis" aria-labelledby="playbook-title">
   <div class="analysis-inner">
 
-    <div class="label">
-      The playbook
-    </div>
+    <div class="label">The playbook</div>
 
-    <h2>
-      Make it<br>
-      personal.
-    </h2>
+    <h2 id="playbook-title">Decide who<br>really counts.</h2>
 
     <p>
-      Notice how the argument is constructed.
+      Reform doesn't say it's against disabled people. It says it will
+      protect people with <strong>severe</strong> disabilities.
     </p>
 
     <p>
-      It doesn't begin with welfare statistics or the circumstances
-      of people who cannot work.
+      Then it draws a line.
     </p>
 
     <p>
-      It asks you to imagine <strong>your neighbour.</strong>
+      On one side: <strong>broken backs and lost limbs.</strong> Disability
+      you can see.
     </p>
 
     <p>
-      You are leaving for work. Their curtains are closed.
-      You are paying taxes. They are receiving benefits.
+      On the other: anxiety, mental illness, conditions that don't show.
+      These become <strong>“the odd bout of anxiety”</strong>, a
+      generation that won't get up for the alarm clock.
     </p>
 
     <p>
-      One person is working. One person isn't.
-      One is paying. One is taking.
+      Then it asks you to look at your neighbour's closed curtains, and
+      fill in the rest yourself.
     </p>
 
     <p>
-      Reform then supplies the conclusion:
-      <strong>“This is unfair.”</strong>
+      But you can't see a disability through a window.
+    </p>
+
+    <p>
+      By Reform's own estimate, close to <strong>three million</strong>
+      people would have their disability or sickness payments withdrawn
+      or changed.
     </p>
 
   </div>
-
 </section>
-
 
 <!-- THE REALITY -->
 
-<section class="reality">
-
+<section class="reality" aria-labelledby="reality-title">
   <div class="reality-inner">
 
-    <div class="label">
-      The reality
-    </div>
+    <div class="label">The reality</div>
 
-    <h2>
-      Look beyond<br>
-      the curtains.
-    </h2>
-
+    <h2 id="reality-title">Look beyond<br>the curtains.</h2>
 
     <div class="fact">
-
-      <div class="big-number">
-        5.5 million
-      </div>
-
+      <div class="big-number">96%</div>
       <p>
-        disabled people are in work in the UK.
+        of people who aren't working or looking for work mainly because of
+        long-term sickness are disabled. If the neighbour behind the
+        curtains is off sick long-term, they are almost certainly disabled.
       </p>
-
     </div>
-
 
     <div class="fact">
-
-      <div class="big-number">
-        29.7 points
-      </div>
-
+      <div class="big-number">5.5 million</div>
       <p>
-        is the employment-rate gap between disabled and
-        non-disabled people.
+        disabled people are in work in the UK. PIP, the main disability
+        benefit, can be paid whether someone works or not.
       </p>
-
     </div>
-
 
     <div class="fact">
-
-      <div class="big-number">
-        7.6%
-      </div>
-
+      <div class="big-number">7.6%</div>
       <p>
-        of workless disabled people move into work in a year,
-        compared with 28.3% of workless non-disabled people.
+        of workless disabled people moved into work each year, compared
+        with 28.3% of workless non-disabled people. That's about a quarter
+        of the rate.
       </p>
-
+      <p class="note">
+        Average for 2014 to 2024. The employment gap between disabled and
+        non-disabled people was 29.7 percentage points in 2025.
+      </p>
     </div>
-
 
     <div class="fact">
-
-      <div class="big-number">
-        1.2%
-      </div>
-
+      <div class="big-number">1.4%</div>
       <p>
-        of Personal Independence Payment expenditure was estimated
-        by the Department for Work and Pensions as functional-needs
-        fraud in 2025/26.
+        of PIP spending was estimated to be lost to fraud in 2025/26.
       </p>
-
+      <p class="note">
+        That's up from 0.4% the year before, and the rise is real. It still
+        means about 98.6% of PIP spending was not fraud.
+      </p>
     </div>
-
 
     <div class="reality-copy">
 
       <p>
-        A closed curtain tells you nothing about the person
-        behind it.
+        <strong>“Broken backs and lost limbs”?</strong> PIP isn't based on
+        which condition you have. It is based on how a condition affects
+        your daily life.
       </p>
 
       <p>
-        They may already work. They may be unable to work.
-        They may be trying to get back into work in a labour
-        market where disabled people are substantially less
-        likely to be employed.
+        <strong>“The odd bout of anxiety”?</strong> Government figures show
+        that mental health conditions limit people's daily lives a lot
+        about as often as back, neck and limb conditions do: 34% compared
+        with 36%. For people with a mental illness or other nervous
+        disorder, it's about half.
       </p>
 
       <p>
+        The rise in disability benefit claims is real, and every major party
+        has plans to reform the system. Reform says it would keep support
+        for the most severe cases and fund equipment and adaptations
+        through local councils.
+      </p>
+
+      <p>
+        But the same party has pledged to repeal the Equality Act, the law
+        that protects disabled people from discrimination at work, in shops,
+        on transport and in public services.
+      </p>
+
+      <p>
+        A closed curtain tells you nothing about the person behind it. They
+        may already work. They may be unable to work. They may be trying to
+        get back into work, when disabled people move into jobs at about a
+        quarter of the rate of everyone else.
+      </p>
+
+      <p class="evidence-line">
         Reform asks you to look at your neighbour's curtains.
       </p>
 
@@ -665,68 +784,68 @@ footer p {
 
     </div>
 
-
     <div class="reality-sources">
-
-      <strong>
-        Sources
-      </strong>
-
-      <p>
-        Department for Work and Pensions,
-        <a
-          href="https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025"
-          target="_blank"
-          rel="noopener">
-          The employment of disabled people 2025
-        </a>.
-      </p>
-
-      <p>
-        Department for Work and Pensions,
-        <a
-          href="https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-ending-fye-2026-estimates/fraud-and-error-in-the-benefit-system-financial-year-ending-fye-2026-estimates"
-          target="_blank"
-          rel="noopener">
-          Fraud and error in the benefit system: financial year ending 2026
-        </a>.
-      </p>
-
+      <strong>Sources</strong>
+      <ul>
+        <li>
+          Department for Work and Pensions,
+          <a href="https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025"
+             target="_blank" rel="noopener noreferrer">
+            The employment of disabled people 2025</a>, updated March 2026.
+          See sections 2, 4, 7 and 9.
+        </li>
+        <li>
+          Department for Work and Pensions,
+          <a href="https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-ending-fye-2026-estimates/fraud-and-error-in-the-benefit-system-financial-year-ending-fye-2026-estimates"
+             target="_blank" rel="noopener noreferrer">
+            Fraud and error in the benefit system: financial year ending
+            2026</a>.
+        </li>
+        <li>
+          GOV.UK,
+          <a href="https://www.gov.uk/pip"
+             target="_blank" rel="noopener noreferrer">
+            Personal Independence Payment (PIP)</a>.
+        </li>
+        <li>
+          Yahoo News, reporting The Telegraph,
+          <a href="https://ca.news.yahoo.com/reform-uk-unveils-massive-50bn-210330777.html"
+             target="_blank" rel="noopener noreferrer">
+            Reform UK unveils massive £50bn welfare overhaul to scrap PIP</a>,
+          16 August 2026.
+        </li>
+        <li>
+          Disability News Service,
+          <a href="https://www.disabilitynewsservice.com/appalling-and-frightening-reform-ready-to-legalise-discrimination-by-scrapping-equality-act/"
+             target="_blank" rel="noopener noreferrer">
+            Reform "ready to legalise discrimination" by scrapping Equality
+            Act</a>, February 2026.
+        </li>
+      </ul>
     </div>
 
   </div>
-
 </section>
-
 
 <!-- FINAL -->
 
 <section class="final">
-
   <div class="final-inner">
-
     <p>
       Your disabled<br>
       neighbour<br>
       isn't why<br>
       Britain is broken.
     </p>
-
   </div>
-
 </section>
 
-  
 </main>
 
-
 <footer>
-
   <div class="footer-inner">
 
-    <div class="footer-title">
-      The Reform Playbook
-    </div>
+    <div class="footer-title">The Reform Playbook</div>
 
     <p>
       An independent project examining the political rhetoric of Reform UK.
@@ -734,8 +853,11 @@ footer p {
       Reform UK.
     </p>
 
-  </div>
+    <p style="margin-top: 12px;">
+      Page last checked against sources: 15 September 2026.
+    </p>
 
+  </div>
 </footer>
 
 </body>
